@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Success Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="PAGES" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="COOKIES" transform="translate(-19.000000, -19.000000)">
+            <g id="Icons/Info" transform="translate(18.000000, 18.000000)">
+                <g id="info" transform="translate(1.000000, 1.000000)">
+                    <g id="Colors/Blue_R" fill="#0785ED">
+                        <rect id="Rectangle" x="0" y="0" width="22" height="22" rx="11"></rect>
+                    </g>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="11" cy="6.02066667" r="1.46666667"></circle>
+                    <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" x="9.9" y="9.68733333" width="2.2" height="7.33333333"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="69px" height="48px" viewBox="0 0 69 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Subscription-Plans" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Video-Maker-Single-Purchase" transform="translate(-787.000000, -689.000000)">
+            <g id="Icon3" transform="translate(788.000000, 690.000000)">
+                <path d="M67,1 L67,44.13 C67,44.6822847 66.5522847,45.13 66,45.13 L1,45.13 C0.44771525,45.13 0,44.6822847 0,44.13 L0,1 C-1.11022302e-16,0.44771525 0.44771525,0 1,0 L66,0 C66.5522847,0 67,0.44771525 67,1 Z" id="Path" stroke="#363F5A" stroke-width="2" stroke-linecap="round"></path>
+                <circle id="Oval" fill="#C1C9E0" cx="5.16" cy="3.99" r="1.03"></circle>
+                <circle id="Oval" fill="#C1C9E0" cx="8.25" cy="3.99" r="1.03"></circle>
+                <circle id="Oval" fill="#C1C9E0" cx="11.35" cy="3.99" r="1.03"></circle>
+                <rect id="Rectangle" fill="#C1C9E0" x="4.13" y="7.08" width="18.59" height="13.12" rx="1"></rect>
+                <rect id="Rectangle" fill="#C1C9E0" x="24.23" y="7.08" width="18.59" height="13.12" rx="1"></rect>
+                <rect id="Rectangle" fill="#C1C9E0" x="4.13" y="22.04" width="18.59" height="13.12" rx="1"></rect>
+                <rect id="Rectangle" fill="#C1C9E0" x="24.23" y="22.04" width="18.59" height="13.12" rx="1"></rect>
+                <rect id="Rectangle" fill="#C1C9E0" x="44.33" y="7.08" width="18.59" height="13.12" rx="1"></rect>
+                <rect id="Rectangle" fill="#363F5A" x="27.85" y="37" width="11.35" height="3.09" rx="1"></rect>
+                <polygon id="Path" fill="#FFFFFF" points="15.34 13.64 12.02 11.72 12.02 15.56"></polygon>
+                <polygon id="Path" fill="#FFFFFF" points="35.44 13.64 32.12 11.72 32.12 15.56"></polygon>
+                <polygon id="Path" fill="#FFFFFF" points="15.34 28.6 12.02 26.68 12.02 30.52"></polygon>
+                <polygon id="Path" fill="#FFFFFF" points="35.44 28.6 32.12 26.68 32.12 30.52"></polygon>
+                <polygon id="Path" fill="#FFFFFF" points="55.54 13.64 52.22 11.72 52.22 15.56"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>TesterFriendly | The Complete solution for testing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+<link rel="icon" type="image/png"
+	href="login_css/images/icons/favicon.ico" />
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css"
+	href="login_css/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css"
+	href="login_css/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css"
+	href="login_css/vendor/animate/animate.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css"
+	href="login_css/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css"
+	href="login_css/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="login_css/css/util.css">
+<link rel="stylesheet" type="text/css" href="login_css/css/main.css">
+<!--===============================================================================================-->
+<style>
+.wide {
+	width: 100%;
+}
+
+.wrap-login100 {
+	padding: 90px 130px 33px 95px;
+}
+
+.container-login100 {
+	background: -webkit-linear-gradient(-135deg, #8ae4e8, #1e3bd4);
+}
+
+.alert-validate::after {
+	display: none;
+}
+
+.text-center{
+	align-items: center;
+	justify-content: center;
+}
+</style>
+</head>
+
+<body>
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100" id="loginPage">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="login_css/images/img-01.png" alt="IMG">
+				</div>
+
+				<form th:action="@{/login}" th:object="${user}" method="post">
+					<span class="login100-form-title"> Member Login </span>
+
+					<div class="row text-center" th:if="${errorMessage!= null}">
+						<div class="alert alert-danger" th:text="${errorMessage}"></div>
+					</div>
+
+					<div class="wrap-input100 validate-input"
+						data-validate="Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="userName"
+							placeholder="UserName/Email"> <span
+							class="focus-input100"></span> <span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input"
+						data-validate="Password is required">
+						<input class="input100" type="password" name="password"
+							placeholder="Password"> <span class="focus-input100"></span>
+						<span class="symbol-input100"> <i class="fa fa-lock"
+							aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button type="submit" class="login100-form-btn">Login</button>
+					</div>
+
+					<div class="text-center p-t-12">
+						<span class="txt1"> Forgot </span> <a class="txt2" href="#">
+							Username / Password? </a>
+					</div>
+
+					<div class="text-center p-t-136">
+						<button class="txt2" type="button" id="createAccount">
+							Create your Account <i class="fa fa-long-arrow-right m-l-5"
+								aria-hidden="true"></i>
+						</button>
+					</div>
+				</form>
+			</div>
+			<!-- ----------------------------------------------------------- Registration ----------------------------------------------------------------------- -->
+
+			<div class="wrap-login100" id="registartionPage"
+				style="display: none">
+				<div id="phase1" class="wide">
+					<span class="login100-form-title"> Member Registration </span>
+
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="text" id="companyMail"
+							placeholder="Company Email"> <span class="focus-input100"></span>
+						<span class="symbol-input100"> <i class="fa fa-envelope"
+							aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="text" id="personalEmail"
+							placeholder="Personal Email"> <span
+							class="focus-input100"></span> <span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="password" id="pass"
+							placeholder="Password"> <span class="focus-input100"></span>
+						<span class="symbol-input100"> <i class="fa fa-lock"
+							aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button id="next" class="login100-form-btn">Register</button>
+					</div>
+				</div>
+				<!-- -------------------------------Registration phase2---------------------------------------- -->
+				<div id="phase2" style="display: none;" class="wide">
+					<span class="login100-form-title"> Member Registration </span>
+
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="text" id="name"
+							placeholder="Full Name"> <span class="focus-input100"></span>
+						<span class="symbol-input100"> <i class="fa fa-user"
+							aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="text" id="designation"
+							placeholder="Designation"> <span class="focus-input100"></span>
+						<span class="symbol-input100"> <i class="fa fa-suitcase"
+							aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="text" id="phone" placeholder="Phone">
+						<span class="focus-input100"></span> <span class="symbol-input100">
+							<i class="fa fa-mobile" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="text" id="companyName"
+							placeholder="Company Name"> <span class="focus-input100"></span>
+						<span class="symbol-input100"> <i class="fa fa-building"
+							aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" id="register">Register</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--===============================================================================================-->
+	<script src="login_css/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="login_css/vendor/bootstrap/js/popper.js"></script>
+	<script src="login_css/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="login_css/vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="login_css/vendor/tilt/tilt.jquery.min.js"></script>
+	<script>
+		$('.js-tilt').tilt({
+			scale : 1.1
+		})
+	</script>
+	<!--===============================================================================================-->
+	<script src="login_css/js/main.js"></script>
+
+	<script>
+		$('#createAccount').click(function() {
+			$('#registartionPage').show();
+			$('#loginPage').hide();
+		});
+
+		$('#next').click(function() {
+			$('#phase2').show();
+			$('#phase1').hide();
+		});
+
+		$('#register')
+				.click(
+						function() {
+							var newUser = {
+								"name" : $('#name').val(),
+								"password" : $('#pass').val(),
+								"companyEmail" : $('#companyMail').val(),
+								"personalDetails" : {
+									"designation" : $('#designation').val(),
+									"companyName" : $('#companyName').val(),
+									"email" : $('#personalEmail').val(),
+									"phoneNumber" : $('#phone').val()
+								}
+							}
+
+							$
+									.ajax({
+										url : 'http://192.168.35.6:8009/register',
+										type : "post",
+										dataType : "json",
+										contentType : "application/json",
+										data : JSON.stringify(newUser),
+										success : function(data) {
+											alert('Successfully Registered. Login Details Send to your email address');
+											location.reload();
+										},
+										error : function(e) {
+											alert("Error Saving. Please try agian");
+										}
+									});
+						});
+	</script>
+
+</body>
+
+</html>

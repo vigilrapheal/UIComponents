@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Favicon icon -->
+	<link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+	<title>TesterFriendly | A complete solution for testers</title>
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Menu CSS -->
+	<link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+	<!-- Animation CSS -->
+	<link href="css/animate.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<!-- color CSS you can use different color css from css/colors folder -->
+	<!-- We have chosen the skin-blue (blue.css) for this starter
+          page. However, you can choose any other skin from folder css / colors .
+-->
+	<link href="css/colors/blue-dark.css" id="theme" rel="stylesheet">
+	<link href="css/sitecxCss.css">
+
+	<!-- <link rel="stylesheet" href="css/plan/pricing.css"> -->
+
+	<link rel="stylesheet" href="css/plan/pricing.min.css">
+
+	<link rel="stylesheet" href="css/plan/layout.min.css">
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+	<style>
+		/* layout.css Style */
+		.upload-drop-zone {
+			height: 200px;
+			border-width: 2px;
+			margin-bottom: 20px;
+		}
+
+		/* skin.css Style*/
+		.upload-drop-zone {
+			color: #ccc;
+			border-style: dashed;
+			border-color: #ccc;
+			line-height: 200px;
+			text-align: center
+		}
+
+		.upload-drop-zone.drop {
+			color: #222;
+			border-color: #222;
+		}
+
+		.green-color {
+			background-color: #90EE90
+		}
+
+		.whitecolor {
+			color: antiquewhite
+		}
+
+		.pushright {
+			text-align: right;
+		}
+
+		.btn {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+
+		/* Boostrap Buttons Styling */
+		.btn-default {
+			font-family: Raleway-SemiBold;
+			font-size: 13px;
+			color: rgba(108, 88, 179, 0.75);
+			letter-spacing: 1px;
+			line-height: 15px;
+			border: 2px solid rgba(108, 89, 179, 0.75);
+			border-radius: 40px;
+			background: transparent;
+			transition: all 0.3s ease 0s;
+		}
+
+		.btn-default:hover {
+			color: #FFF;
+			background: rgba(108, 88, 179, 0.75);
+			border: 2px solid rgba(108, 89, 179, 0.75);
+		}
+
+		.btn-primary {
+			font-family: Raleway-SemiBold;
+			font-size: 13px;
+			color: rgba(58, 133, 191, 0.75);
+			letter-spacing: 1px;
+			line-height: 15px;
+			border: 2px solid rgba(58, 133, 191, 0.75);
+			border-radius: 40px;
+			background: transparent;
+			transition: all 0.3s ease 0s;
+		}
+
+		.btn-primary:hover {
+			color: #FFF;
+			background: rgba(58, 133, 191, 0.75);
+			border: 2px solid rgba(58, 133, 191, 0.75);
+		}
+
+		.btn-success {
+			font-family: Raleway-SemiBold;
+			font-size: 13px;
+			color: rgba(103, 192, 103, 0.75);
+			letter-spacing: 1px;
+			line-height: 15px;
+			border: 2px solid rgba(103, 192, 103, 0.75);
+			border-radius: 40px;
+			background: transparent;
+			transition: all 0.3s ease 0s;
+		}
+
+		.txt-center {
+			text-align: center;
+		}
+
+		.slide-button {
+			font-size: 20px;
+		}
+
+		.btn-group {
+			margin: auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		.center-align {
+			margin: auto;
+			justify-content: center;
+		}
+
+		.grey-box {
+			background: rgb(202, 236, 252);
+			color: black;
+			padding: 10px;
+			margin-bottom: 15px;
+		}
+
+		.shadow {
+			border: 1px solid;
+			padding: 10px;
+			box-shadow: 5px 10px rgb(169, 175, 175);
+		}
+
+		.greybox-font {
+			text-align: center;
+			font-size: 20px;
+		}
+
+		.pricingbBackground {
+			background: rgb(213, 247, 243);
+			border-radius: 25px;
+			padding: 20px;
+		}
+
+		@ keyframes glowing {
+			0% {
+				box-shadow: 0 0 10px #c4a300;
+			}
+
+			40% {
+				box-shadow:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					0 0 20 px #c4a300;
+			}
+
+			60% {
+				box-shadow:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					0 0 20 px #c4a300;
+			}
+
+			100% {
+				box-shadow:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					0 0 10 px #c4a300;
+			}
+		}
+
+		.checkboxGlow:hover {
+			animation: glowing 5000ms infinite;
+		}
+
+		.align-center {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		/* ---------feature style------------ */
+		.funkyradio label {
+			width: 100%;
+			border-radius: 3px;
+			border: 1px solid #D1D3D4;
+			font-weight: normal;
+		}
+
+		.funkyradio input[type="checkbox"]:empty {
+			display: none;
+		}
+
+		.funkyradio input[type="checkbox"]:empty~label {
+			position: relative;
+			line-height: 2.5em;
+			text-indent: 3.25em;
+			margin-top: 2em;
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		.funkyradio input[type="checkbox"]:empty~label:before {
+			position: absolute;
+			display: block;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			content: '';
+			width: 2.5em;
+			background: #D1D3D4;
+			border-radius: 3px 0 0 3px;
+		}
+
+		.funkyradio input[type="checkbox"]:hover:not (:checked)~label {
+			color: #888;
+		}
+
+		.funkyradio input[type="checkbox"]:hover:not (:checked)~label:before {
+			content: '\2714';
+			text-indent: .9em;
+			color: #C2C2C2;
+		}
+
+		.funkyradio input[type="checkbox"]:checked~label {
+			color: #777;
+		}
+
+		.funkyradio input[type="checkbox"]:checked~label:before {
+			content: '\2714';
+			text-indent: .9em;
+			color: #333;
+			background-color: #ccc;
+		}
+
+		.funkyradio input[type="checkbox"]:focus~label:before {
+			box-shadow: 0 0 0 3px #999;
+		}
+
+		.funkyradio-linkaudit input[type="checkbox"]:checked~label:before {
+			color: #fff;
+			background-color: rgb(121, 252, 252);
+		}
+
+		.funkyradio-domainmonitor input[type="checkbox"]:checked~label:before {
+			color: #fff;
+			background-color: #337ab7;
+		}
+
+		.funkyradio-websiteperformance input[type="checkbox"]:checked~label:before {
+			color: #fff;
+			background-color: #5cb85c;
+		}
+
+		.funkyradio-sslmonitor input[type="checkbox"]:checked~label:before {
+			color: #fff;
+			background-color: #d9534f;
+		}
+
+		.funkyradio-websecurity input[type="checkbox"]:checked~label:before {
+			color: #fff;
+			background-color: #f0ad4e;
+		}
+
+		.funkyradio-malware input[type="checkbox"]:checked~label:before {
+			color: #fff;
+			background-color: #5bc0de;
+		}
+
+		.funkyradio-blacklist input[type="checkbox"]:checked~label:before {
+			color: #fff;
+			background-color: #ca1eec;
+		}
+
+		.funkyradio-ping input[type="checkbox"]:checked~label:before {
+			color: #fff;
+			background-color: #97e2b6;
+		}
+
+		.funkyradio-siteupcheck input[type="checkbox"]:checked~label:before {
+			color: #fff;
+			background-color: #aa7162;
+		}
+
+		/* ---------feature style------------ */
+		.hide {
+			display: none;
+		}
+
+		.no-result {
+			color: red
+		}
+	</style>
+
+
+
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="cssload-speeding-wheel"></div>
+	</div>
+	<div id="wrapper">
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-static-top m-b-0">
+			<div class="navbar-header">
+				<a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse"
+					data-target=".navbar-collapse"><i class="fa fa-bars"></i></a>
+				<div class="top-left-part">
+					<a class="logo" href="index.html"><b><img src="../plugins/images/pixeladmin-logo.png"
+								alt="home" /></b><span class="hidden-xs"><img
+								src="../plugins/images/pixeladmin-text.png" alt="home" /></span></a>
+				</div>
+				<ul class="nav navbar-top-links navbar-left m-l-20 hidden-xs">
+					<li>
+						<form role="search" class="app-search hidden-xs">
+							<input type="text" placeholder="Search..." class="form-control">
+							<a href=""><i class="fa fa-search"></i></a>
+						</form>
+					</li>
+				</ul>
+				<ul class="nav navbar-top-links navbar-right pull-right">
+					<li><a class="profile-pic" href="#"> <img src="../plugins/images/users/varun.jpg" alt="user-img"
+								width="36" class="img-circle"><b class="hidden-xs" id="nameHere"></b>
+						</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-header -->
+			<!-- /.navbar-top-links -->
+			<!-- /.navbar-static-side -->
+		</nav>
+		<!-- Left navbar-header -->
+		<div class="navbar-default sidebar" role="navigation">
+			<div class="sidebar-nav navbar-collapse slimscrollsidebar">
+				<ul class="nav" id="side-menu">
+					<li style="padding: 10px 0 0;"><a href="/login" class="waves-effect"><i class="fa fa-clock-o fa-fw"
+								aria-hidden="true"></i><span class="hide-menu">Dashboard</span></a></li>
+					<li><a href="/profile" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i><span
+								class="hide-menu">Profile</span></a></li>
+					<li><a href="/run" class="waves-effect"><i class="fa fa-play fa-fw" aria-hidden="true"></i><span
+								class="hide-menu">Run</span></a></li>
+					<li><a href="/userManagement" class="waves-effect admin-hide"><i class="fa fa-users"
+								aria-hidden="true"></i><span class="hide-menu"> Manage User</span></a></li>
+					<li><a href="/roleManagement" class="waves-effect admin-hide super-admin-hide"><i
+								class="fa fa-wrench" aria-hidden="true"></i><span class="hide-menu"> Manage
+								Role</span></a></li>
+					<li><a href="/domainManagement" class="waves-effect admin-hide super-admin-hide"><i
+								class="fa fa-apple" aria-hidden="true"></i><span class="hide-menu"> Manage
+								Domain</span></a></li>
+					<li><a href="/planManagement" class="waves-effect admin-hide super-admin-hide"><i
+								class="fa fa-search" aria-hidden="true"></i><span class="hide-menu"> Manage
+								Plan</span></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Left navbar-header end -->
+		<!-- Page Content -->
+		<div id="page-wrapper">
+			<div class="container-fluid">
+				<div class="row bg-title">
+					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+						<h4 class="page-title">Plan Management</h4>
+					</div>
+					<div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+						<a href="" id="logout"
+							class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Logout</a>
+						<ol class="breadcrumb">
+							<li><a href="#">Dashboard</a></li>
+							<li class="active">Plan Management</li>
+						</ol>
+					</div>
+					<!-- /.col-lg-12 -->
+				</div>
+
+				<div class="row">
+					<div class="btn-group slide-button">
+						<button class="btn btn-default btn-outline btn-lg" id="showPlan">
+							<i class="fa fa-eye"></i> Show Plan
+						</button>
+						<button class="btn btn-default btn-outline btn-lg" id="addNewPlan">
+							<i class="fa fa-plus"></i> Add Plan
+						</button>
+						<button class="btn btn-default btn-outline btn-lg" id="updatePlan">
+							<i class="fa fa-edit"></i> Edit Plan
+						</button>
+					</div>
+				</div>
+				<br>
+
+				<!-- -------------------------------------------------------plan display area----------------------------------------------------------------- -->
+
+				<div class="row" id="displayPlans">
+					<div class="col-md-12">
+						<div class="white-box">
+							<h3>Subscription Plan</h3>
+							<div class="row">
+								<div class="col-md-12" id="planArea">
+									<h5 class="align-center no-result hide" id="noResult">No result Found !!!</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+				<!-- -------------------------------------------------------Add new plan---------------------------------------------------- -->
+				<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+
+				<div class="row" style="display: none;" id="displayAddPlan">
+					<div class="col-md-12">
+						<div class="white-box">
+							<h3>Add New Plan</h3>
+							<br> <br>
+							<div class="row">
+								<h4>
+									<b>Plan Name</b>
+								</h4>
+								<br> <input type="text" id="planName" class="form form-control btn-rounded"
+									placeholder="Add new plan here ...">
+							</div>
+							<br> <br>
+							<div class="row">
+								<h4>
+									<b>Plan Type</b>
+								</h4>
+								<br>
+								<div class="btn-group colors" data-toggle="buttons">
+									<label class="btn btn-primary active"> <input type="radio" name="planType"
+											value="YEARLY" autocomplete="off" checked> Yearly
+									</label> <label class="btn btn-primary"> <input type="radio" name="planType"
+											value="MONTHLY" autocomplete="off">
+										Monthly
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<h4>
+									<b>Price</b>
+								</h4>
+								<br> <input type="text" id="price" class="form form-control btn-rounded"
+									placeholder="Enter Price">
+							</div>
+							<br>
+							<!-- -------------------------Duration---------------------------- -->
+							<div class="row">
+								<h4>
+									<b>Duration</b>
+								</h4>
+								<br>
+								<div class="col-sm-4">
+									<input type="number" id="durationYear" class="form form-control btn-rounded"
+										placeholder="Select no of year">
+								</div>
+								<div class="col-sm-4">
+									<input type="number" id="durationMonth" class="form form-control btn-rounded"
+										placeholder="Select no of months">
+								</div>
+							</div>
+							<br>
+							<!-- ------------------------------------------------------Sitecx Features----------------------------------------------------------- -->
+							<div class="row">
+								<h4>
+									<b>Select Feature</b>
+								</h4>
+								<!-- <div class="col-sm-4">
+                                    <div class="btn-group colors" data-toggle="buttons">
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="select" id="selectAll" value="Select All">
+                                            Select All
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="select" id="selectNone" value="Select none">
+                                            Select None
+                                        </label>
+                                    </div>
+                                </div> -->
+								<div class="funkyradio">
+									<div class="funkyradio-linkaudit">
+										<input type="checkbox" name="checkbox" id="checkbox1" /> <label
+											for="checkbox1">Link Audit</label>
+									</div>
+									<!-- ---------------link audit config-------------- -->
+									<div class="white-box hide checkbox1">
+										<div class="row">
+											<div class="col-md-3">
+												<input type="text" placeholder="Url Limit" id="linkauditUrlLimit"
+													class="from form-control">
+											</div>
+											<div class="col-md-3">
+												<input type="number" placeholder="Crawl Depth" id="linkauditCrawlDepth"
+													class="from form-control">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-3">
+												<input type="number" placeholder="Crawl Delay" id="linkauditCrawlDelay"
+													class="from form-control">
+											</div>
+										</div>
+									</div>
+									<!-- ---------------link audit config-------------- -->
+									<div class="funkyradio-domainmonitor">
+										<input type="checkbox" name="checkbox" id="checkbox2" /> <label
+											for="checkbox2">Domain Monitor</label>
+									</div>
+									<div class="funkyradio-websiteperformance">
+										<input type="checkbox" name="checkbox" id="checkbox3" /> <label
+											for="checkbox3">Website Performance</label>
+									</div>
+									<div class="funkyradio-sslmonitor">
+										<input type="checkbox" name="checkbox" id="checkbox4" /> <label
+											for="checkbox4">SSL Monitor</label>
+									</div>
+									<div class="funkyradio-websecurity">
+										<input type="checkbox" name="checkbox" id="checkbox5" /> <label
+											for="checkbox5">Web Security</label>
+									</div>
+									<div class="funkyradio-malware">
+										<input type="checkbox" name="checkbox" id="checkbox6" /> <label
+											for="checkbox6">Malware</label>
+									</div>
+									<div class="funkyradio-blacklist">
+										<input type="checkbox" name="checkbox" id="checkbox7" /> <label
+											for="checkbox7">Black List</label>
+									</div>
+									<div class="funkyradio-ping">
+										<input type="checkbox" name="checkbox" id="checkbox8" /> <label
+											for="checkbox8">Ping</label>
+									</div>
+									<div class="funkyradio-siteupcheck">
+										<input type="checkbox" name="checkbox" id="checkbox9" /> <label
+											for="checkbox9">Site Up Check</label>
+									</div>
+								</div>
+							</div>
+							<!-- ------------------------------------------------------Sitecx Features----------------------------------------------------------- -->
+							<div class="row">
+								<br> <br>
+								<div class="row">
+									<div class="col-sm-4"></div>
+									<div class="col-sm-4 align-center" style="justify-content: center">
+										<button type="button" onclick="saveOrUpdatePlan()"
+											class="btn btn-primary btn-lg">Save Plan</button>
+									</div>
+									<div class="col-sm-4"></div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+					<!-- --------------------------------------------------------------------------------------------------- -->
+					<!-- ------------------------------------------update Plan-------------------------------------------- -->
+					<!-- --------------------------------------------------------------------------------------------------- -->
+
+					<div class="row" style="display: none;" id="displayUpdateDomain">
+						<div class="col-md-12">
+							<div class="white-box">
+								<h3>Update Plan</h3>
+								<div class="row">
+									<h4>
+										<b>Plan Name</b>
+									</h4>
+
+									<select id="planNameFromServer" class="form form-control">
+
+									</select>
+								</div>
+								<br> <br>
+								<div class="row">
+									<h4>
+										<b>Select Privileges</b>
+									</h4>
+									<div class="col-sm-3">
+										<select id="lstBoxUpdate1" multiple="multiple" size="8"
+											class="form form-control">
+										</select>
+									</div>
+									<div class="col-sm-3">
+										<div class="center-align">
+											<button type="button" class="btn btn-default" id="btnRight">ADD
+												&gt;</button>
+											<br> <br>
+											<button type="button" class="btn btn-default" id="btnLeft">REMOVE
+												&lt;</button>
+											<br> <br>
+											<button type="button" class="btn btn-default" id="btnAllRight">ADD ALL
+												&gt;&gt;</button>
+											<br> <br>
+											<button type="button" class="btn btn-default" id="btnAllLeft">REMOVE
+												ALL &lt;&lt;</button>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<select multiple size="8" class="form form-control" id="lstBoxUpdate2">
+
+										</select>
+									</div>
+								</div>
+								<br> <br>
+								<div class="row">
+									<div class="col-sm-4"></div>
+									<div class="col-sm-4">
+										<button type="button" class="btn btn-primary btn-lg"
+											onclick="saveOrUpdatePlan()">Update Role</button>
+									</div>
+									<div class="col-sm-4"></div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.container-fluid -->
+				<footer class="footer text-center"> 2019 &copy; Owned By
+					OpnLabs </footer>
+			</div>
+			<!-- /#page-wrapper -->
+		</div>
+		<!-- /#wrapper -->
+		<!-- jQuery -->
+		<script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- Menu Plugin JavaScript -->
+		<script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+		<!--slimscroll JavaScript -->
+		<script src="js/jquery.slimscroll.js"></script>
+
+
+
+		<!--Wave Effects -->
+		<script src="js/waves.js"></script>
+		<!-- Custom Theme JavaScript -->
+		<script src="js/custom.min.js"></script>
+		<script type="text/javascript" src="js/sitecxCommon.js"></script>
+		<script>
+			localStorage.setItem('planPagesNumber', 0);
+			localStorage.setItem('planTotalPage', 0);
+			localStorage.setItem('doOnce', true);
+			localStorage.setItem('completePage', false);
+			var timeOutVariable;
+
+			$(document).ready(
+				function () {
+					$('#nameHere').text(localStorage.getItem("userName"));
+
+					$.ajaxSetup({
+						headers: {
+							'Authorization': 'Bearer '
+								+ localStorage.getItem('token')
+						}
+					});
+
+					$('#showPlan').click(function () {
+						$('#displayPlans').show();
+						$('#displayAddPlan').hide();
+						$('#displayUpdateDomain').hide();
+					});
+					$('#addNewPlan').click(function () {
+						$('#displayPlans').hide();
+						$('#displayAddPlan').show();
+						$('#displayUpdateDomain').hide();
+					});
+					$('#updatePlan').click(function () {
+						$('#displayPlans').hide();
+						$('#displayAddPlan').hide();
+						$('#displayUpdateDomain').show();
+					});
+
+					$('#selectAll').on(
+						"change",
+						function () {
+							$('input[name*="checkbox"]').attr(
+								'checked', 'checked');
+
+						});
+
+					$('#selectNone').on("change", function () {
+						$('input[name*="checkbox"]').removeAttr('checked');
+					});
+
+					$('input[name*="checkbox"]').click(function () {
+						var inputValue = $(this).attr("id");
+						if ($("." + inputValue).is(":hidden"))
+							$("." + inputValue).removeClass("hide");
+						else {
+							$("." + inputValue).addClass("hide");
+							$('.' + inputValue).find('input').val('');
+						}
+					});
+
+					getAllPlanDetails();
+
+				});
+
+			function getAllPlanDetails() {
+
+				var pageNumber = getPageNumber("planPagesNumber",
+					"planTotalPage");
+
+				if (pageNumber === 'undefined' || pageNumber === undefined)
+					return;
+
+				var url = "http://localhost:8009/plan/getPlans?page="
+					+ pageNumber + "&size=2"
+				$
+					.get(
+						url,
+						function (data) {
+							/* 			if ("number" in data) {
+											localStorage.setItem('planPagesNumber',
+													data.number);
+										} else {
+											localStorage.setItem('planPagesNumber',
+													null);
+										}
+										localStorage.setItem('planTotalPage',
+												data.totalPages); */
+
+							//console.log(JSON.stringify(data));
+							localStorage.setItem('planTotalPage',
+								data.totalPages);
+
+							localStorage.setItem('planPagesNumber',
+								(data.pageable.pageNumber) + 1);
+
+							var subscriptionPlan = data.content;
+
+							if (subscriptionPlan.length === 0) {
+								$('#noResult').removeClass('hide');
+							}
+
+							$
+								.each(
+									subscriptionPlan,
+									function (key, value) {
+										// $('#planNameFromServer').append(
+										//     $("<option></option>").attr('value', value[0])
+										//         .text(value[1]));
+
+										if (localStorage
+											.getItem('doOnce') === "true") {
+											$('#planArea')
+												.append(
+													'<table class="table" id="planDisplay"> <thead> <th class="bg-primary">Plan Name</th>'
+													+ '<th class="bg-success">Plan Type</th> <th class="bg-warning">Price</th> <th class="bg-danger">Created Date</th>'
+													+ '<th class="bg-info">Duration</th> </thead> <tbody></tbody></table>');
+											localStorage
+												.setItem(
+													'doOnce',
+													false);
+											localStorage
+												.setItem(
+													'planTotalPage',
+													data.totalPages);
+
+										}
+
+										$('#planDisplay tbody')
+											.append(
+												'<tr class="bg-primary"> <td class="bg-primary">'
+												+ value[1]
+												+ '</td><td class="bg-success">'
+												+ value[2]
+												+ '</td><td class="bg-warning">'
+												+ value[3]
+												+ '</td><td class="bg-danger">'
+												+ value[4]
+												+ '</td><td class="bg-info">'
+												+ value[8]
+												+ '</td></tr>')
+
+									});
+							if (!localStorage.getItem("completePage")
+								|| localStorage
+									.getItem("completePage") === "false") {
+								getAllPlanDetails();
+							}
+						});
+			}
+
+			function saveOrUpdatePlan() {
+				var planDetails;
+
+				if ($('#displayAddPlan').is(":hidden")) {//update plan
+
+					console.log("update plan comming soon");
+
+				} else {
+					planDetails = {
+						"planName": $('#planName').val(),
+						"planType": $('input[name*="planType"]:checked').val(),
+						"price": $('#price').val(),
+						"duration": $('#durationYear').val() + "."
+							+ $('#durationMonth').val(),
+						"featureConfig": {
+							"linkAudit": $('#checkbox1').is(':checked'),
+							"domainMonitor": $('#checkbox2').is(':checked'),
+							"websitePerformance": $('#checkbox3').is(
+								':checked'),
+							"sslMonitor": $('#checkbox4').is(':checked'),
+							"webSecurity": $('#checkbox5').is(':checked'),
+							"malware": $('#checkbox6').is(':checked'),
+							"blackList": $('#checkbox7').is(':checked'),
+							"ping": $('#checkbox8').is(':checked'),
+							"siteUpChecker": $('#checkbox9').is(':checked'),
+							"linkAuditCOnfiguration": {
+								"urlLimit": $('#linkauditUrlLimit').val(),
+
+								"crawlDepth": $('#linkauditCrawlDepth').val(),
+
+								"crawlDelay": $('#linkauditCrawlDelay').val()
+							}
+						},
+						"domainId": null
+					}
+				}
+
+				$.ajax({
+					type: "POST",
+					contentType: "application/json",
+					url: "http://localhost:8009/plan/createPlan",
+					data: JSON.stringify(planDetails),
+					dataType: 'json',
+					cache: false,
+					timeout: 600000,
+					success: function (data) {
+						alert('Successfully added Plan :' + data.planName);
+						$('#displayAddPlan').find('input[type="text"]').val('');
+						$('#displayAddPlan').find('input[type="radio"]').prop('checked', false);
+						$('#displayAddPlan').find('input[type="checkbox"]').prop('checked', false);
+						getAllPlanDetails();
+					},
+					error: function (e) {
+						alert('Error : ' + e);
+					}
+				});
+			}
+
+			// function getAllPrivileges() {
+			//     $.get("http://localhost:8009/privilege/getprivilege?page="
+			//         + getPageNumber() + "&size=10", function (data) {
+			//             // var roles = JSON.parse(data.jsonResponse);
+			//             localStorage.setItem('pagesNumber', data.number);
+			//             localStorage.setItem('totalPage', data.totalPages);
+			//             var privileges = data.content;
+			//             $.each(privileges, function (key, value) {
+
+			//                 $('#lstBox1').append($("<option></option>").attr('value',
+			// 		/* value.id */value[0]).text(
+			// 		/* value.name */value[1]));
+			//             });
+			//         });
+			// }
+
+			function getPageNumber(pageNumber, totalPage) {
+
+				var pageNumber = localStorage.getItem(pageNumber);
+				var totalPage = localStorage.getItem(totalPage);
+				if (pageNumber < totalPage || pageNumber === 0
+					|| pageNumber === "0") {
+					return pageNumber;
+				} else {
+					console.log("Nothing more to display from plan details");
+					//clearTimeout(timeOutVariable);
+					localStorage.setItem('completePage', true);
+				}
+			}
+
+			// function getAllRoles() {
+			//     $.get(
+			//         "http://localhost:8009/role/getrole",
+			//         function (data) {
+			//             var roles = data;
+			//             $.each(roles, function (key, value) {
+			//                 console
+			//                     .log(/* value.roleName */value[1]);
+			//                 $('#planArea')
+			//                     .append(
+			//                         $(
+			//                             "<div class=\"grey-box greybox-font shadow\"></div>")
+			//                             .text(/* value.roleName */value[1]));
+			//                 $('#planNameFromServer').append($('<option></option>').attr('value', value[0]).text(value[1]));
+			//             });
+			//         });
+			// }
+
+			(function () {
+				$('#btnRight').click(
+					function (e) {
+						var selectedOpts = $('#lstBox1 option:selected');
+						if (selectedOpts.length == 0) {
+							alert("Nothing to move.");
+							e.preventDefault();
+						}
+						if ($("#lstBox2 option[value='"
+							+ selectedOpts.val() + "']").length === 0) {
+							$('#lstBox2').append($(selectedOpts).clone());
+							e.preventDefault();
+						}
+						$(selectedOpts).remove();
+						e.preventDefault();
+					});
+				$('#btnAllRight').click(function (e) {
+					var selectedOpts = $('#lstBox1 option');
+					if (selectedOpts.length == 0) {
+						alert("Nothing to move.");
+						e.preventDefault();
+					}
+					$('#lstBox2').append($(selectedOpts).clone());
+					$(selectedOpts).remove();
+					e.preventDefault();
+				});
+				$('#btnLeft').click(
+					function (e) {
+						var selectedOpts = $('#lstBox2 option:selected');
+						if (selectedOpts.length == 0) {
+							alert("Nothing to move.");
+							e.preventDefault();
+						}
+						if ($("#lstBox1 option[value='"
+							+ selectedOpts.val() + "']").length === 0) {
+							$('#lstBox1').append($(selectedOpts).clone());
+							e.preventDefault();
+						}
+						$(selectedOpts).remove();
+						e.preventDefault();
+					});
+				$('#btnAllLeft').click(function (e) {
+					var selectedOpts = $('#lstBox2 option');
+					if (selectedOpts.length == 0) {
+						alert("Nothing to move.");
+						e.preventDefault();
+					}
+					$('#lstBox1').append($(selectedOpts).clone());
+					$(selectedOpts).remove();
+					e.preventDefault();
+				});
+			}(jQuery));
+
+			function getDomain() {
+				var url = $('#planName').val();
+				return url.replace('http://', '').replace('https://', '')
+					.replace('www.', '').split(/[/?#]/)[0];
+			}
+		</script>
+</body>
+
+</html>

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019) -->
+<html lang="en" style="overflow-y: auto;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>SiteCX - Find Your Broken Pages, Links, Resources and Certificates in Better Way</title>
+    <!-- <meta name="description" content="Control your broken Pages, Links, Resources, Certificates with confidence in a better way.">
+    <meta name="keywords" content="broken, links, pages, crawl, spider, find">
+    <meta property="og:title" content="SiteCx - Find Your Broken Pages, Links, Resources and Certificates in Better Way">
+    <meta property="og:description" content="Control your broken Pages, Links, Resources, Certificates with confidence in a better way.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <link rel="icon" type="image/x-icon" href="./SiteCx/logo_s.png">
+    <link rel="icon" type="image/png" href="./SiteCx/logo_s.png">
+
+    <!--<base href="/">-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.0.39/css/materialdesignicons.css">
+
+    <!-- CSRF Token -->
+    <!-- <meta name="csrf-token" content="IPBYzk4bbWWreS3YI0om4yAkE2wTc0XnC59nnxFt"> -->
+
+    <link rel="stylesheet" href="./SiteCx/front.css">
+
+    <style type="text/css">
+        span.vue-typer[data-v-c41bac74] {
+            cursor: default;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+        
+        span.vue-typer span.left[data-v-c41bac74],
+        span.vue-typer span.right[data-v-c41bac74] {
+            display: inline
+        }
+    </style>
+    <style type="text/css">
+        @keyframes vue-typer-caret-blink {
+            50% {
+                opacity: 0
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes vue-typer-caret-smooth {
+            0%,
+            20% {
+                opacity: 1
+            }
+            60%,
+            to {
+                opacity: 0
+            }
+        }
+        
+        @keyframes vue-typer-caret-phase {
+            0%,
+            20% {
+                opacity: 1
+            }
+            90%,
+            to {
+                opacity: 0
+            }
+        }
+        
+        @keyframes vue-typer-caret-expand {
+            0%,
+            20% {
+                transform: scaleY(1)
+            }
+            80%,
+            to {
+                transform: scaleY(0)
+            }
+        }
+        
+        .vue-typer-caret-blink[data-v-a16e0f02] {
+            animation: vue-typer-caret-blink 1s step-start 0s infinite
+        }
+        
+        .vue-typer-caret-smooth[data-v-a16e0f02] {
+            animation: vue-typer-caret-smooth .5s ease-in-out 0s infinite alternate
+        }
+        
+        .vue-typer-caret-phase[data-v-a16e0f02] {
+            animation: vue-typer-caret-phase .5s ease-in-out 0s infinite alternate
+        }
+        
+        .vue-typer-caret-expand[data-v-a16e0f02] {
+            animation: vue-typer-caret-expand .5s ease-in-out 0s infinite alternate
+        }
+        
+        span.caret[data-v-a16e0f02]:empty:before {
+            content: "\200B"
+        }
+        
+        span[data-v-a16e0f02] {
+            display: inline-block;
+            width: 1px
+        }
+        
+        .idle[data-v-a16e0f02],
+        .typing[data-v-a16e0f02] {
+            background-color: #000
+        }
+        
+        .selecting[data-v-a16e0f02] {
+            display: none;
+            background-color: #000
+        }
+        
+        .erasing[data-v-a16e0f02] {
+            background-color: #000
+        }
+        
+        .complete[data-v-a16e0f02] {
+            display: none;
+            background-color: #000
+        }
+    </style>
+    <style type="text/css">
+        .char[data-v-302772ec] {
+            display: inline-block;
+            white-space: pre-wrap
+        }
+        
+        .newline[data-v-302772ec] {
+            display: inline
+        }
+        
+        .typed[data-v-302772ec] {
+            color: #000;
+            background-color: transparent
+        }
+        
+        .selected[data-v-302772ec] {
+            color: #000;
+            background-color: #accef7
+        }
+        
+        .erased[data-v-302772ec] {
+            display: none
+        }
+
+            /* animation */
+
+#spin:after {
+  content:"";
+  animation: spin 25s linear infinite;
+}
+@keyframes spin {
+  0% { content:"Pages"; }
+  10% { content:"Certificates"; }
+  20% { content:"Resources"; }
+  30% { content:"Pages"; }
+  40% { content:"Certificates"; }
+  50% { content: "Resources"; }
+  60% { content: "Pages"; }
+  70% { content: "Certificates"; }
+  80% { content: "Resources"; }
+  90% { content: "Pages"; }
+}
+
+    </style>
+
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="x-hidden has-sticky-header" data-aos-easing="ease" data-aos-duration="600" data-aos-delay="0">
+    <div id="app">
+        <div>
+            <nav class="navbar is-transparent is-fixed-top custom-menu custom-menu__light">
+                <div class="container p-l-0 p-r-0">
+                    <div class="navbar-brand">
+                        <a href="#" class="navbar-item"><img src="./SiteCx/logo_s.png" alt="Image" class="logo-md"> <span class="is-size-4 m-l-5 has-text-black has-text-weight-bold"></span></a>
+                        <div data-target="navbarExampleTransparentExample" class="navbar-burger burger"><span></span> <span></span> <span></span></div>
+                    </div>
+                    <div id="navbarSupportedContent" class="navbar-menu">
+                       
+                        <div class="navbar-end custom-menu__right">
+                            <div class="navbar-item">
+                                <div class="field is-grouped"><a class="button is-primary is-rounded" id="subscribe"><span class="has-text-weight-semibold">Request Access</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section id="hero" class="hero is-medium">
+                <div class="hero-body p-t-60 p-b-60">
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column is-6">
+                                <div class="hero-title__group m-t-100">
+                                    <div class="hero-title">
+                                        <h2>Control your broken
+                                <span data-v-c41bac74="" class="vue-typer"><span data-v-c41bac74="" class="left"><span data-v-302772ec="" data-v-c41bac74="" class="char custom typed" id="spin">
+                                    <span data-v-c41bac74="" class="right"></span></span></span></span><br>with confidence in a better way.</h2></div>
+                                    <div class="Hero--Subtitle">
+                                        <p class="subtitle">Control the broken pages of your application to be sure they are working as charmed.</p>
+                                    </div>
+                                </div>
+                                <div class="hero-cta-group">
+                                    <form class="hero-form cta__large">
+                                        <div class="field has-addons">
+                                            <!---->
+                                            <div class="control is-expanded is-clearfix">
+                                                <input type="email" autocomplete="on" id="email" name="email" placeholder="Enter your email" class="input">
+                                                <!---->
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <p class="control">
+                                                <button class="button is-primary" onclick="save()">Request Access</button>
+                                            </p>
+                                            <!---->
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="column is-6 is-hidden-mobile m-t-40">
+                                <div class="hero-figure is-pulled-right"><img src="./SiteCx/landing-oops.png" alt="" class="img-fluid w-100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="overview" class="section-spacer m-t-50">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-4">
+                            <div class="feature-card">
+                                <div class="u-icon u-icon__circle u-icon__lg bg-dimped__primary"><i class="mdi mdi-link-variant"></i></div>
+                                <div class="feature-card__body">
+                                    <h4 class="feature-title">Internal &amp; External URLs</h4>
+                                    <p class="m-b-5">
+                                        SiteCX controls both internal and external broken urls of your application with confidence.
+                                    </p> </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="feature-card">
+                                <div class="u-icon u-icon__circle u-icon__lg bg-dimped__purple"><i class="mdi mdi-file-document-box"></i></div>
+                                <div class="feature-card__body">
+                                    <h4 class="feature-title">Missing Resources</h4>
+                                    <p class="m-b-5">
+                                        You can fully control your resources such as CSS, JS, Images, Videos of your website.
+                                    </p></div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="feature-card m-0">
+                                <div class="u-icon u-icon__circle u-icon__lg bg-dimped__cyan"><i class="mdi mdi-shield"></i></div>
+                                <div class="feature-card__body">
+                                    <h4 class="feature-title">Certificate Health</h4>
+                                    <p>Be awere of your Certificate Health of your web application with SiteCX in better way.</p></div>
+                            </div>
+                        </div>
+                    </div>
+     
+                </div>
+            </section>
+            <section id="hiw" class="section-spacer bg-very__gray">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-6 is-hidden-mobile">
+                            <div class="feature-list-image-angle"><img data-aos="fade-right" src="./SiteCx/team1.png" alt="Image" class="img-fluid aos-init"></div>
+                        </div>
+                        <div class="column is-hidden-mobile"></div>
+                        <div class="column is-5">
+                            <div class="feature-list-wrapper">
+                                <div class="content-header">
+                                    <h2 class="content-title is-size-4">Intuitive Interface</h2>
+                                    <p>We do know how hard it is to control your website pages if you have a big site. That's why we created SiteCX to help you find broken pages.</p>
+                                </div>
+                                <ul class="list list-unstyled list-circle">
+                                    <li><span>Historical Pages Status</span></li>
+                                    <li><span>Screenshot of Broken Pages</span></li>
+                                    <li><span>Specific Page Retention</span></li>
+                                    <li><span>Internal &amp; External URL Check</span></li>
+                                </ul> </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-spacer m-t-50">
+                <div class="container">
+                    <div class="columns flex-column-reverse flex-sm-row align-items-center">
+                        <div class="column is-5 mr-auto">
+                            <div class="feature-list-wrapper">
+                                <div class="content-header">
+                                    <h2 class="content-title is-size-4">Featured Team Support</h2>
+                                    <p>Working as a team is important and we know it. We created an impressive environment for teams.</p>
+                                </div>
+                                <ul class="list list-circle">
+                                    <li><span>Easy Member Management</span></li>
+                                    <li><span>Common Team Homepage</span></li>
+                                    <li><span>Accessing Team Member's Sites</span></li>
+                                    <li><span>Team Alerts</span></li>
+                                </ul> <a id="subscribe" class="button is-primary has-text-weight-bold">
+                        Request Access
+                    </a></div>
+                        </div>
+                        <div class="column"></div>
+                        <div class="column is-6 is-hidden-mobile">
+                            <div class="feature-list-image is-pulled-right"><img src="./SiteCx/team-work-new.png" alt="Image" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="hiw" class="section-spacer bg-very__gray">
+                <div class="container p-t-40 p-b-40">
+                    <div class="columns is-centered">
+                        <div data-aos="zoom-in" class="column is-6 is-hidden-mobile feature-list-wrapper feature-list-image-angle2 aos-init">
+                            <div class="columns">
+                                <div class="column is-3"><img src="./SiteCx/resource_1.png" alt="Image" class="img-fluid"></div>
+                                <div class="column"></div>
+                            </div>
+                            <div class="columns">
+                                <div class="column"></div>
+                                <div class="column is-4"><img src="./SiteCx/resource_5.png" alt="Image" class="img-fluid"></div>
+                                <div class="column"></div>
+                            </div>
+                            <div class="columns">
+                                <div class="column is-7"><img src="./SiteCx/resource_2.png" alt="Image" class="img-fluid"></div>
+                                <div class="column is-4"><img src="./SiteCx/resource_6.png" alt="Image" class="img-fluid"></div>
+                            </div>
+                            <div class="columns">
+                                <div class="column"></div>
+                                <div class="column is-4"><img src="./SiteCx/resource_1.png" alt="Image" class="img-fluid"></div>
+                                <div class="column"></div>
+                                <div class="column is-3"><img src="./SiteCx/resource_2.png" alt="Image" class="img-fluid"></div>
+                            </div>
+                            <div class="columns">
+                                <div class="column is-3"><img src="./SiteCx/resource_5.png" alt="Image" class="img-fluid"></div>
+                                <div class="column"></div>
+                            </div>
+                        </div>
+                        <div class="column is-hidden-mobile"></div>
+                        <div class="column is-5">
+                            <div class="feature-list-wrapper">
+                                <div class="content-header">
+                                    <h2 class="content-title is-size-4">Missing Content Check</h2>
+                                    <p>SiteCX offers you to control your missing resources like CSS, JS, Image, Video etc. You can check both external and internal resources of your web application in better way.</p>
+                                </div>
+                                <ul class="list list-unstyled list-circle">
+                                    <li><span>Internal &amp; External Resources</span></li>
+                                    <li><span>Stylesheet Files</span></li>
+                                    <li><span>JavaScript Files</span></li>
+                                    <li><span>Images, Videos, Sounds</span></li>
+                                </ul> </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faqs" class="section-spacer section-faq bg-very__gray">
+                <div class="container">
+                    <header class="section-header has-text-centered">
+                        <h2 class="section-title is-size-3 p-b-40">Frequently Asked Questions</h2></header>
+                    <div class="columns">
+                        <div class="column is-6 p-b-30">
+                            <div class="faq-style-1-item active">
+                                <div class="faq-style-1-head"><span class="mdi mdi-minus opened"></span> <span class="mdi mdi-plus closed"></span>
+                                    <h3>What is SiteCx?</h3></div>
+                                <div class="faq-style-1-corp">
+                                    <p>
+                                        SiteCX is a tool that crawls your website to find out broken pages to help you to maintain your project. SiteCX has a powerful alerting system that if any page of your project is broken, you will get a notification. Please check our documentation for more information.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-style-1-item">
+                                <div class="faq-style-1-head"><span class="mdi mdi-minus opened"></span> <span class="mdi mdi-plus closed"></span>
+                                    <h3>What are Internal and External links?</h3>
+                                    <div class="lx-clear-fix"></div>
+                                </div>
+                                <div class="faq-style-1-corp">
+                                    <p>SiteCX controls your both internal and external links. An internal link is a link where located on your website and points to your website. Similarly, an external link is a link where located on your website but point to another website. You can fully control your web application with SiteCX in confidence.</p>
+                                </div>
+                            </div>
+                            <div class="faq-style-1-item">
+                                <div class="faq-style-1-head"><span class="mdi mdi-minus opened"></span> <span class="mdi mdi-plus closed"></span>
+                                    <h3>Can I Work with My Team?</h3>
+                                    <div class="lx-clear-fix"></div>
+                                </div>
+                                <div class="faq-style-1-corp">
+                                    <p>We gladly support teamwork. If you are working on your project as a team, SiteCX has super easy to use Team Management interface that you and your teammates can use. You can share your sites with team members without bother.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-hidden-mobile"></div>
+                        <div class="column is-5 is-hidden-mobile p-b-30 p-t-10"><img src="./SiteCx/faq-developer.png" alt="#" class="floating"></div>
+                    </div>
+                </div>
+            </section>
+            <div class="lx-counters container m-t-40">
+                <div class="columns">
+                    <div class="lx-counter-item column"><span class="mdi mdi-earth"></span>
+                        <h3>2.093</h3>
+                        <p>Crawls</p>
+                        <div class="lx-clear-fix"></div>
+                    </div>
+                    <div class="lx-counter-item column"><span class="mdi mdi-link"></span>
+                        <h3>51.147</h3>
+                        <p>Found Links</p>
+                        <div class="lx-clear-fix"></div>
+                    </div>
+                    <div class="lx-counter-item column"><span class="mdi mdi-link-off"></span>
+                        <h3>1.866</h3>
+                        <p>Broken Links</p>
+                    </div>
+                </div>
+            </div>
+            <section id="try" class="section-spacer text-left pb-0 p-t-100">
+                <div class="container">
+                    <div class="columns  is-desktop callout">
+                        <div class="column">
+                            <h2 class="h2">Request Early Access</h2>
+                            <p class="lead">We will let you know when SiteCX is ready to crawl your website to detect broken pages</p>
+                        </div>
+                        <div class="column">
+                            <form action="" class="hero-form m-t-20">
+                                <div class="field has-addons">
+                                    <!---->
+                                    <div class="control is-expanded is-clearfix">
+                                        <input type="email" autocomplete="on" id="email1" name="email" placeholder="Enter your email" class="input">
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                    </div>
+                                    <p class="control">
+                                        <button class="button is-primary" onclick="save()">Request Access</button>
+                                    </p>
+                                    <!---->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="section-spacer footer-section">
+                <div class="container">
+                    <div class="columns is-desktop flex-column-reverse flex-sm-row flex-lg-row">
+                        <div class="column is-6">
+                            <div class="footer-widget first-of-footer-widget"><span class="navbar-item logo-sm m-b-10 p-0"><img src="./SiteCx/logo_s.png" alt="Image" class="logo-md"> <span class="is-size-4 m-l-5 has-text-black has-text-weight-bold"></span></span>
+                                <p>Copyright © 2018 SiteCX. All Rights Reserved.</p> <a href="#" class="d-block mb-10">+91 97469 00100</a>
+                                <br> <a href="mailto:n@sitecx.com">n@sitecx.com</a>
+                                <!-- <ul class="social-list__inline mt-10">
+                                    <li><a href="#" target="_blank"><i class="mdi mdi-twitter"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="mdi mdi-github-circle"></i></a></li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!---->
+        </div>
+    </div>
+    <script src="./SiteCx/front.js"></script>
+    <!-- <script type="text/javascript" async="" src="./SiteCx/analytics.js"></script>
+    <script type="text/javascript" async="" src="./SiteCx/ckdbct48effx.js"></script>
+   
+    <script async="" src="./SiteCx/js"></script> -->
+
+    <!-- <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-40366323-7');
+    </script> -->
+
+    <!-- <script>
+        "use strict";
+        ! function() {
+            var t = window.driftt = window.drift = window.driftt || [];
+            if (!t.init) {
+                if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
+                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                    t.factory = function(e) {
+                        return function() {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function(e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function(t) {
+                        var e = 3e5,
+                            n = Math.ceil(new Date() / e) * e,
+                            o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+            }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('ckdbct48effx');
+    </script> -->
+
+    <script type="text/javascript">
+        var Main = [];
+    </script>
+
+    <script type="text/javascript">
+        var Main = {
+            data: {
+                plan: {
+                    yearly: false,
+                }
+            },
+
+        };
+    </script>
+
+    <script type="text/javascript">
+        var Modals = {
+            data: {
+                //
+            },
+            mounted() {
+                //
+            },
+            methods: {
+                //
+            }
+
+        };
+    </script>
+
+    <script type="text/javascript">
+        var vue = new Vue({
+            el: '#app',
+            mixins: [Main],
+            data() {
+                return {
+                    //
+                }
+            },
+            mounted() {},
+            methods: {
+                successToastMessage(message) {
+                        var that = this;
+                        that.$toast.open({
+                            message: message,
+                            duration: 4000,
+                            position: 'is-bottom-right',
+                            type: 'is-success'
+                        });
+                    },
+                    warningToastMessage(message) {
+                        var that = this;
+                        that.$toast.open({
+                            message: message,
+                            duration: 4000,
+                            position: 'is-bottom-right',
+                            type: 'is-warning'
+                        });
+                    },
+                    dangerToastMessage(message) {
+                        var that = this;
+                        that.$toast.open({
+                            message: message,
+                            duration: 4000,
+                            position: 'is-bottom-right',
+                            type: 'is-danger'
+                        });
+                    },
+
+            }
+
+        })
+    </script>
+    <script>
+        $("#subscribe").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#try").offset().top},
+        'slow');
+            });
+
+            function save(){
+            var UserRequest = {}
+
+			UserRequest["email"] = $("#email").val()!==""?$("#email").val():$("#email1").val();
+
+            var emailval=$("#email").val()!==""?$("#email").val():$("#email1").val();
+			
+			$.ajax({
+				type : "POST",
+				contentType : "application/json",
+				url : "http://localhost:8009/saveMail",
+				data : JSON.stringify(UserRequest),
+				dataType : 'json',
+				cache : false,
+				timeout : 600000,
+				success : function(data) {
+
+					console.log(data);
+
+				},
+				error : function(e) {
+
+					console.log(e);
+				}
+            });
+
+
+            //     $.ajax({
+			// 	type : "GET",
+			// 	contentType : "application/json",
+			// 	url : "http://sitecx/saveMail",
+			// 	data : JSON.stringify(UserRequest),
+			// 	dataType : 'json',
+			// 	cache : false,
+			// 	timeout : 600000,
+			// 	success : function(data) {
+
+			// 		console.log(data);
+
+			// 	},
+			// 	error : function(e) {
+
+			// 		console.log(e);
+			// 	}
+            // });
+
+
+
+        }
+
+    </script>
+    <!-- <div id="drift-widget-container" style="position: absolute; z-index: 2147483647;">
+        <iframe id="drift-widget" src="./SiteCx/index.html" title="Drift Messenger" role="complementary" style="border: none; display: block; height: 76px !important; width: 76px !important; position: fixed; top: auto; left: auto; bottom: 24px; right: 24px; visibility: visible; z-index: 2147483647; max-height: 100vh; max-width: 100vw; transition: none; background: none transparent; opacity: 1;" class="drift-widget-welcome-online"></iframe>
+    </div> -->
+</body>
+
+</html>

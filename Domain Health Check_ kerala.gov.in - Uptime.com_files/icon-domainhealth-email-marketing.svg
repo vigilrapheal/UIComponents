@@ -1,0 +1,18 @@
+<svg width="12" height="11" viewBox="0 0 12 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>email-83</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-14009 -294)">
+<g id="email-83">
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(14009 294)" fill="#89909E"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path1_fill" transform="translate(14009 297.693)" fill="#89909E"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 11.25 0L 0.75 0C 0.3 0 0 0.314286 0 0.785714L 0 1.88571L 6 5.42143L 12 1.96429L 12 0.785714C 12 0.314286 11.7 0 11.25 0Z"/>
+<path id="path1_fill" d="M 5.625 3.3L 0 0L 0 6.52143C 0 6.99286 0.3 7.30714 0.75 7.30714L 11.25 7.30714C 11.7 7.30714 12 6.99286 12 6.52143L 12 0L 6.375 3.3C 6.165 3.41 5.835 3.41 5.625 3.3Z"/>
+</defs>
+</svg>

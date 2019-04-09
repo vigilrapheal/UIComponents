@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="53px" viewBox="0 0 72 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Subscription-Plans" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Video-Maker-Single-Purchase" transform="translate(-384.000000, -681.000000)">
+            <g id="Icon1" transform="translate(385.000000, 681.000000)">
+                <rect id="Rectangle" stroke="#363F5A" stroke-width="2" stroke-linecap="round" x="0" y="8" width="62.58" height="37.78" rx="1"></rect>
+                <circle id="Oval" fill="#F5FAFE" cx="61.49" cy="9.5" r="9.5"></circle>
+                <path d="M34,26.23 L29.23,23.47 C28.9915872,23.3347205 28.6992319,23.3363894 28.462379,23.4743819 C28.2255262,23.6123744 28.0798937,23.8658811 28.08,24.14 L28.08,29.65 C28.0772068,29.9249697 28.2231641,30.1800013 28.4616613,30.316878 C28.7001585,30.4537547 28.9939914,30.4511243 29.23,30.31 L34,27.56 C34.2364514,27.4219803 34.3818312,27.1687859 34.3818312,26.895 C34.3818312,26.6212141 34.2364514,26.3680197 34,26.23 Z" id="Path" stroke="#363F5A" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M0,50.13 L62.58,50.13" id="Path" stroke="#363F5A" stroke-width="2" stroke-linecap="round"></path>
+                <circle id="Oval" fill="#363F5A" cx="10.3" cy="50.23" r="2.69"></circle>
+                <path d="M63.62,6.45 L63.62,4.9 L67.87,7.76 L63.62,10.63 L63.62,8.83 C60.5548206,8.88291056 57.9503884,11.0860178 57.39,14.1 C57.3178063,13.7107911 57.2809894,13.3158466 57.28,12.92 C57.2792888,9.39687627 60.0975874,6.52078912 63.62,6.45 Z" id="Path" fill="#363F5A"></path>
+            </g>
+        </g>
+    </g>
+</svg>

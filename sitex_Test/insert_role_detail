@@ -1,0 +1,8 @@
+REPLACE INTO login.privilege VALUES (1, 1, 'Privilege to create a new user','PRIV_CREATE_USER',1);
+REPLACE INTO login.privilege VALUES (2, 1, 'Lets an In-House user run a warned url', 'PRIV_EXECUTE_WARNED_URL',0);
+REPLACE INTO login.privilege VALUES (3, 1, 'Privilege to create and modify notifications', 'PRIV_CREATE_MODIFICATION',1);
+REPLACE INTO login.privilege VALUES (4, 1, 'Privilege to modify Link Checker Configuration', 'PRIV_MODIFY_LINKCHECKER_CONFIG',0);
+
+
+
+REPLACE INTO userlog.user_role VALUES (1,1, 'Root user with all the privileges.', 'SUPER_ADMIN');

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add User</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2></h2>
+    <table align="center" cellspacing="10px" style="width: 100%">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Set Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input type="text" id="name" style="width: 100%"></td>
+            <td><input type="text" id="designation" style="width: 100%"></td>
+            <td><select style="width: 100%" id="roleList">
+               
+            </select></td>
+        </tr>
+        <tr>
+            <td colspan="3"><button type="button" id="saveUser" onclick="saveUser()"></button></td>
+        </tr>
+    </tbody>
+    </table>
+<script>
+$(document).ready(function() {
+			getRole()
+		});
+
+    function getRole() {
+
+$.ajax({
+    type : "GET",
+    contentType : "application/json",
+    url : "/getrole",
+    dataType : 'json',
+    cache : false,
+    timeout : 600000,
+    success : function(data) {
+
+        $.each(data, function(i, item) {
+            $('#roleList').append(
+                    $("<option></option>").attr("data-value",
+                            JSON.stringify(item)).attr("value",
+                            item.roleId).text(item.roleName));
+        });
+
+    },
+    error : function(e) {
+
+        console.log(e);
+    }
+});
+}
+</script>
+</body>
+</html>

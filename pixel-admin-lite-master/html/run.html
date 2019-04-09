@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>TesterFriendly | A Complete Solution for testing</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- Animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- color CSS you can use different color css from css/colors folder -->
+    <!-- We have chosen the skin-blue (blue.css) for this starter
+          page. However, you can choose any other skin from folder css / colors .
+-->
+    <link href="css/colors/blue-dark.css" id="theme" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"
+        href="http://cdnjs.cloudflare.com/ajax/libs/mouse0270-bootstrap-notify/3.1.5/bootstrap-notify.min.js">
+    <link href="css/sitecxCss.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <style>
+        /* layout.css Style */
+        .upload-drop-zone {
+            height: 200px;
+            border-width: 2px;
+            margin-bottom: 20px;
+        }
+
+        /* skin.css Style*/
+        .upload-drop-zone {
+            color: #ccc;
+            border-style: dashed;
+            border-color: #ccc;
+            line-height: 200px;
+            text-align: center
+        }
+
+        .upload-drop-zone.drop {
+            color: #222;
+            border-color: #222;
+        }
+
+        .green-color {
+            background-color: #90EE90
+        }
+
+        .whitecolor {
+            color: antiquewhite
+        }
+
+        .glyphicon {
+            font-size: 40px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .align-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+    </div>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header">
+                <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse"
+                    data-target=".navbar-collapse"><i class="fa fa-bars"></i></a>
+                <div class="top-left-part">
+                    <a class="logo" href="index.html"><b><img src="../plugins/images/pixeladmin-logo.png"
+                                alt="home" /></b><span class="hidden-xs"><img
+                                src="../plugins/images/pixeladmin-text.png" alt="home" /></span></a>
+                </div>
+                <!-- <ul class="nav navbar-top-links navbar-left m-l-20 hidden-xs">
+                    <li>
+                        <form role="search" class="app-search hidden-xs">
+                            <input type="text" placeholder="Search..." class="form-control">
+                            <a href=""><i class="fa fa-search"></i></a>
+                        </form>
+                    </li>
+                </ul> -->
+                <ul class="nav navbar-top-links navbar-right pull-right">
+
+                    <li><a class="profile-pic" href="" data-toggle="dropdown">
+                            <img src="../plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b
+                                class="hidden-xs" id="nameHere"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="btn-danger logout">LogOut</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- Left navbar-header -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse slimscrollsidebar">
+                <ul class="nav" id="side-menu">
+                    <li style="padding: 10px 0 0;"><a href="/login" class="waves-effect"><i class="fa fa-clock-o fa-fw"
+                                aria-hidden="true"></i><span class="hide-menu">Dashboard</span></a></li>
+                    <li><a href="/profile" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i><span
+                                class="hide-menu">Profile</span></a></li>
+                    <li><a href="/run" class="waves-effect"><i class="fa fa-play fa-fw" aria-hidden="true"></i><span
+                                class="hide-menu">Run</span></a></li>
+                    <li><a href="/userManagement" class="waves-effect admin-hide"><i class="fa fa-users"
+                                aria-hidden="true"></i><span class="hide-menu"> Manage User</span></a></li>
+                    <li><a href="/roleManagement" class="waves-effect admin-hide super-admin-hide"><i
+                                class="fa fa-wrench" aria-hidden="true"></i><span class="hide-menu"> Manage
+                                Role</span></a></li>
+                    <li><a href="/domainManagement" class="waves-effect admin-hide super-admin-hide"><i
+                                class="fa fa-apple" aria-hidden="true"></i><span class="hide-menu"> Manage
+                                Domain</span></a></li>
+                    <li><a href="/planManagement" class="waves-effect admin-hide super-admin-hide"><i
+                                class="fa fa-search" aria-hidden="true"></i><span class="hide-menu"> Manage
+                                Plan</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Left navbar-header end -->
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Live Monitoring page</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <a href=""
+                            class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light logout">Logout</a>
+                        <ol class="breadcrumb">
+                            <li><a href="/">Dashboard</a></li>
+                            <li class="active">Live Monitoring page</li>
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- -------------------------------------------------Drag and drop area-------------------------------------------------------- -->
+                <div class="row hide" id="dragDropArea">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h2>Drag and Drop Url List file</h2>
+                            <div class="upload-drop-zone" id="drop-zone">Just drag and
+                                drop files here</div>
+
+                            <!-- Progress Bar -->
+                            <!-- <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 60%;">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------Single domain run----------------------------------------------------------------------------- -->
+                <div class="row" id="singleArea">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h2>Select Your Domain</h2>
+                            <select class="form form-control btn-rounded" id="singleDomain">
+                                <option value="">----------------Select a
+                                    Domain--------------------------</option>
+                            </select><br>
+                            <div class="align-center hide" id="runDomain">
+
+                                <button type="button" id="startMonitoring" class="btn btn-success btn-rounded">
+                                    <i class="fa fa-search" aria-hidden="true"></i> Monitor
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="displayArea">
+                    <!-- <div class="alert alert-success row">
+                                <div class="col-sm-1">&gt;</div><div class="col-sm-9" style="font-size: 20px;color: black">www.google.com</div><div class="col-sm-2"><span class="pull-right"><input type="button" class="btn btn-rounded btn-primary" value="xlsx Download"></span></div>  
+                                </div> -->
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"> 2019 &copy; Owned By
+                OpnLabs</footer>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+    <script
+        src="http://cdnjs.cloudflare.com/ajax/libs/mouse0270-bootstrap-notify/3.1.5/bootstrap-notify.min.js"></script>
+
+    <script src="js/jquery.buttonLoader.js"></script>
+    <script>
+        $.ajaxSetup({
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('token')
+            }
+        });
+        $(document).ready(function () {
+
+            $('.has-spinner').click(function () {
+                var btn = $(this);
+
+                setTimeout(function () {
+                    $(btn).buttonLoader('stop');
+                }, 3000);
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.5/sockjs.min.js"></script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="js/websocket_impl.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <!-- 	<script
+		src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script> -->
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <script type="text/javascript" src="js/sitecxCommon.js"></script>
+    <script type="text/javascript">
+        localStorage.setItem('pagesNumber', 0);
+        localStorage.setItem('totalPage', 0);
+        localStorage.setItem('completePage', false);
+        localStorage.setItem('doOnce', true);
+		/* 	var singleUploadForm = document.querySelector('#singleUploadForm');
+		 var singleFileUploadInput = document.querySelector('#singleFileUploadInput');
+		 var singleFileUploadError = document.querySelector('#singleFileUploadError');
+		 var singleFileUploadSuccess = document.querySelector('#singleFileUploadSuccess');
+
+		 var multipleUploadForm = document.querySelector('#multipleUploadForm');
+		 var multipleFileUploadInput = document.querySelector('#multipleFileUploadInput');
+		 var multipleFileUploadError = document.querySelector('#multipleFileUploadError');
+		 var multipleFileUploadSuccess = document.querySelector('#multipleFileUploadSuccess'); */
+
+        var dropZone = document.getElementById('drop-zone');
+
+        function uploadSingleFile(file) {
+            var formData = new FormData();
+            formData.append("file", file);
+            formData.append("token", localStorage.getItem("token"));
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/uploadFile");
+
+            xhr.onload = function () {
+                console.log(xhr.responseText);
+                var response = JSON.parse(xhr.responseText);
+            }
+
+            xhr.send(formData);
+        }
+
+        dropZone.ondrop = function (e) {
+            e.preventDefault();
+            this.className = 'upload-drop-zone';
+
+            /* 		startUpload(e.dataTransfer.files) */
+            uploadSingleFile(e.dataTransfer.files[0]);
+        }
+
+        dropZone.ondragover = function () {
+            this.className = 'upload-drop-zone drop';
+            return false;
+        }
+
+        dropZone.ondragleave = function () {
+            this.className = 'upload-drop-zone';
+            return false;
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            getAllDomains();
+        })
+
+        function getAllDomains() {
+
+            var pageNumber = getPageNumber("pagesNumber", "totalPage");
+
+            if (pageNumber === 'undefined' || pageNumber === undefined)
+                return;
+
+            var url = ip + "/domain/listAllDomain?page="
+                + pageNumber + "&size=10";
+
+            $.get(url, function (data) {
+
+                if (data.length === 0 || data.content.length === 0) {
+                    $('#noResult').removeClass("hideArea");
+                    return;
+                } else {
+                    $('#domainArea').removeClass("hideArea");
+                }
+
+                localStorage.setItem('pagesNumber',
+                    (data.pageable.pageNumber) + 1);
+                var roles = data.content;
+
+                if (localStorage.getItem('doOnce') === "true") {
+                    localStorage.setItem('doOnce', false);
+                    localStorage.setItem('totalPage', data.totalPages);
+                }
+
+                $.each(roles, function (key, value) {
+
+                    $('#singleDomain').append($('<option></option>').attr("value", value.domainId).text(value.companyDomain));
+
+                });
+                if (!localStorage.getItem("completePage")
+                    || localStorage.getItem("completePage") === "false") {
+                    getAllDomains();
+                }
+            });
+        }
+
+        function getPageNumber(pageNumber, totalPage) {
+
+            var pageNumber = localStorage.getItem(pageNumber);
+            var totalPage = localStorage.getItem(totalPage);
+            if (pageNumber < totalPage || pageNumber === 0
+                || pageNumber === "0") {
+                return pageNumber;
+            } else {
+                console.log("Nothing more to display");
+                //clearTimeout(timeOutVariable);
+                localStorage.setItem('completePage', true);
+            }
+        }
+
+        $('#nameHere').text(localStorage.getItem("userName"));
+
+        $('#singleDomain').change(function () {
+            if ($(this).val() === "") {
+                $('#runDomain').addClass('hide');
+            } else {
+                $('#runDomain').removeClass('hide');
+            }
+        });
+
+        $('#startMonitoring')
+            .click(
+                function () {
+
+                    $('#singleDomain').prop("disabled", true);
+                    $('#startMonitoring i').removeClass('fa fa-search');
+                    $('#startMonitoring i').addClass(
+                        'fa fa-spinner fa-spin');
+                    $('#startMonitoring').prop("disabled", true);
+
+                    // $
+                    //     .ajax({
+                    //         url: ip + "/domain/onDemandRun",
+                    //         type:"POST",
+                    //         contentType: "application/json",
+                    //         dataType:"json",
+                    //         data: JSON.stringify(domainId: $('#singleDomain').val()),
+                    //         success: function (data) {
+
+                    //             $('#startMonitoring i')
+                    //                 .removeClass(
+                    //                     'fa fa-spinner fa-spin');
+                    //             $('#startMonitoring i').addClass(
+                    //                 'fa fa-search');
+                    //             $('#startMonitoring').prop(
+                    //                 "disabled", false);
+                    //             $('#singleDomain').prop("disabled",
+                    //                 false);
+                    //             var message = {
+                    //                 message: "You Just started Monitoring you Domain"
+                    //             }
+
+                    //             pushNotification(message);
+                    //         }
+                    //     })
+
+                    $.get(ip + "/domain/onDemandRun/"+$('#singleDomain').val(), function (data) {
+                        $('#startMonitoring i')
+                            .removeClass(
+                                'fa fa-spinner fa-spin');
+                        $('#startMonitoring i').addClass(
+                            'fa fa-search');
+                        $('#startMonitoring').prop(
+                            "disabled", false);
+                        $('#singleDomain').prop("disabled",
+                            false);
+                        var message = {
+                            message: data.message
+                        }
+
+                        pushNotification(message);
+                    })
+                });
+
+        // $(function () {
+        //     $("#startMonitoring").on("click", function () {
+        //         $.notify({
+        //             title: '<strong>好標題</strong>',
+        //             icon: 'glyphicon glyphicon-star',
+        //             message: "飛進來了!"
+        //         }, {
+        //                 type: 'info',
+        //                 animate: {
+        //                     enter: 'animated fadeInUp',
+        //                     exit: 'animated fadeOutRight'
+        //                 },
+        //                 placement: {
+        //                     from: "top",
+        //                     align: "right"
+        //                 },
+        //                 offset: 20,
+        //                 spacing: 10,
+        //                 z_index: 1031,
+        //             });
+        //     });
+        // });
+
+        function pushNotification(data) {
+            $.notify(data, {
+                type: 'info',
+                animate: {
+                    enter: 'animated fadeInUp',
+                    exit: 'animated fadeOutRight'
+                },
+                placement: {
+                    from: "top",
+                    align: "right"
+                },
+                offset: 20,
+                spacing: 10,
+                z_index: 1031,
+            });
+        }
+    </script>
+
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+</body>
+
+</html>

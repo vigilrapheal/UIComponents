@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<style>
+</style>
+</head>
+<body>
+	<table align="center" cellspacing="100">
+		<!-- <tr id="newrole">
+            <td><button type="button" id="addrole">Add Role</button></td>
+            
+        </tr> -->
+		<tr>
+			<td>Select Role</td>
+			<td colspan="2"><select style="width: 100%" id="roleList">
+					<option value="">---------Select---------</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>OR</td>
+		</tr>
+		<tr>
+			<td>Add Role</td>
+			<td colspan="2"><input type="text" id="newrole"
+				style="width: 100%"></td>
+		</tr>
+		<!-- <tr>
+            <td colspan="3"><select style="width: 100%" id="roleList">
+            </select></td>
+        </tr> -->
+		<tr>
+			<td>Add Description</td>
+			<td colspan="2"><textarea id="desc" style="width: 100%"></textarea></td>
+		</tr>
+		<tr>
+			<td><select id="lstBox1">
+					<!--               <option value="adduser">Add User</option>
+                <option value="removeuser">Remove User</option> -->
+			</select></td>
+			<td align="center" id="parent-td">
+				<button type="button" id="btnRight">ADD &gt;</button> <br> <br>
+				<button type="button" id="btnLeft">REMOVE &lt;</button> <br> <br>
+				<button type="button" id="btnAllRight">ADD ALL &gt;&gt;</button> <br>
+				<br>
+				<button type="button" id="btnAllLeft">REMOVE ALL &lt;&lt;</button>
+			</td>
+			<td><select multiple id="lstBox2">
+
+			</select></td>
+		</tr>
+		<tr>
+			<td colspan="3" align="center"><button type="button"
+					value="ADD ROLE" onclick="clickAction()" id="addButton">ADD
+					ROLE</button></td>
+		</tr>
+	</table>
+
+	<script>
+		/*  $("#addrole").on("click",function(){
+		     $("#newrole").append('<td><input type=\"text\" id=\"role\" name=\"role\"></td><td><button type=\"button\" id=\"add\" onclick="clickAction();">Add</button></td>')
+		 }); */
+
+		$(document).ready(function() {
+			getPrivilege();
+			getRole()
+		});
+
+		$("#roleList")
+				.on(
+						"change",
+						function() {
+
+							$("#newrole").val("");
+							$("#desc").empty();
+							$('#lstBox2').empty();
+							$('#lstBox1').empty();
+							$("#addButton").text("EDIT ROLE");
+
+							getPrivilege();
+
+							var selected = $(this).find(":selected");
+
+							if ($(selected).val() === "1") {
+								$(
+										'#newrole, #desc, #lstBox2,#lstBox1,#addButton,#parent-td button')
+										.attr('disabled', 'true');
+							} else {
+								$(
+										'#newrole, #desc, #lstBox2,#lstBox1,#addButton,#parent-td button')
+										.removeAttr('disabled');
+							}
+
+							if ($(selected).val() != "") {
+								$("#newrole").val(
+										$(selected).data("value").roleName);
+								$("#desc").text(
+										$(selected).data("value").description);
+
+								$
+										.each(
+												$(selected).data("value").privileges,
+												function(i, item) {
+													$('#lstBox2')
+															.append(
+																	$(
+																			"<option></option>")
+																			.attr(
+																					"data-value",
+																					JSON
+																							.stringify(item))
+																			.attr(
+																					"value",
+																					item.id)
+																			.text(
+																					item.name));
+												});
+							} else {
+								$("#addButton").text("ADD ROLE");
+							}
+						});
+
+		function getPrivilege() {
+
+			$.ajax({
+				type : "GET",
+				contentType : "application/json",
+				url : "/getprivilege",
+				dataType : 'json',
+				cache : false,
+				timeout : 600000,
+				success : function(data) {
+
+					$.each(data, function(i, item) {
+						$('#lstBox1').append(
+								$("<option></option>").attr("data-value",
+										JSON.stringify(item)).attr("value",
+										item.id).text(item.name));
+					});
+
+				},
+				error : function(e) {
+
+					console.log(e);
+				}
+			});
+		}
+
+		function getRole() {
+
+			$.ajax({
+				type : "GET",
+				contentType : "application/json",
+				url : "/getrole",
+				dataType : 'json',
+				cache : false,
+				timeout : 600000,
+				success : function(data) {
+
+					$.each(data, function(i, item) {
+						$('#roleList').append(
+								$("<option></option>").attr("data-value",
+										JSON.stringify(item)).attr("value",
+										item.roleId).text(item.roleName));
+					});
+
+				},
+				error : function(e) {
+
+					console.log(e);
+				}
+			});
+		}
+
+		function clickAction() {
+
+			var privilegesList = [];
+
+			if ($('#lstBox2 option').length > 0) {
+				var selectednumbers = [];
+				$('#lstBox2 option')
+						.each(
+								function(i, selected) {
+									//                         selectednumbers[i] = $(selected).val();
+									var privileges = {};
+									privileges["id"] = $(selected)
+											.data("value").id;
+									privileges["name"] = $(selected).data(
+											"value").name;
+									privileges["description"] = $(selected)
+											.data("value").description;
+									privileges["active"] = $(selected).data(
+											"value").active;
+									privilegesList[i] = privileges;
+								});
+			}
+
+			var userRole = {}
+
+			userRole["roleName"] = $("#newrole").val().toUpperCase();
+			userRole["description"] = $("#desc").val();
+			userRole["privileges"] = privilegesList;
+
+			var apiUrl
+
+			if ($("#roleList").find(":selected").val() != "") {
+				apiUrl = "/editRole"
+				userRole["roleId"] = $("#roleList").find(":selected").val();
+			} else {
+				apiUrl = "/addrole"
+			}
+
+			$.ajax({
+				type : "POST",
+				contentType : "application/json",
+				url : apiUrl,
+				data : JSON.stringify(userRole),
+				dataType : 'json',
+				cache : false,
+				timeout : 600000,
+				success : function(data) {
+
+					alert("haai");
+
+				},
+				error : function(e) {
+
+					console.log(e);
+				}
+			});
+		}
+		/*    $('#roleList')
+		.append($("<option></option>")
+		       .attr("value",role)
+		       .attr("selected","selected")
+		       .text(role)); 
+		$("#role").remove();
+		$("#add").remove();   
+		} */
+
+		(function() {
+			$('#btnRight').click(
+					function(e) {
+						var selectedOpts = $('#lstBox1 option:selected');
+						if (selectedOpts.length == 0) {
+							alert("Nothing to move.");
+							e.preventDefault();
+						}
+						if ($("#lstBox2 option[value='" + selectedOpts.val()
+								+ "']").length === 0) {
+							$('#lstBox2').append($(selectedOpts).clone());
+							e.preventDefault();
+						}
+						$(selectedOpts).remove();
+						e.preventDefault();
+					});
+			$('#btnAllRight').click(function(e) {
+				var selectedOpts = $('#lstBox1 option');
+				if (selectedOpts.length == 0) {
+					alert("Nothing to move.");
+					e.preventDefault();
+				}
+				$('#lstBox2').append($(selectedOpts).clone());
+				$(selectedOpts).remove();
+				e.preventDefault();
+			});
+			$('#btnLeft').click(
+					function(e) {
+						var selectedOpts = $('#lstBox2 option:selected');
+						if (selectedOpts.length == 0) {
+							alert("Nothing to move.");
+							e.preventDefault();
+						}
+						if ($("#lstBox1 option[value='" + selectedOpts.val()
+								+ "']").length === 0) {
+							$('#lstBox1').append($(selectedOpts).clone());
+							e.preventDefault();
+						}
+						$(selectedOpts).remove();
+						e.preventDefault();
+					});
+			$('#btnAllLeft').click(function(e) {
+				var selectedOpts = $('#lstBox2 option');
+				if (selectedOpts.length == 0) {
+					alert("Nothing to move.");
+					e.preventDefault();
+				}
+				$('#lstBox1').append($(selectedOpts).clone());
+				$(selectedOpts).remove();
+				e.preventDefault();
+			});
+		}(jQuery));
+	</script>
+</body>
+</html>

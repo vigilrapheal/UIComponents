@@ -1,0 +1,241 @@
+.no-transition {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+.wrapper {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wrapper.loaded {
+  opacity: 1;
+}
+
+
+.ajax-overlay {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background: #13294b;
+}
+.ajax-overlay.transparent {
+  background: transparent;
+}
+.ajax-overlay.transparent .m {
+  display: none;
+}
+
+
+/* STORY */
+
+#cadreContent::after, #teamList::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #13294b;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; 
+  z-index: 11; 
+}
+
+#teamList {
+  position: relative;
+}
+
+#cadreContent.overlayed::after, #teamList.overlayed::after {
+  opacity: 0.3;
+  visibility: visible;
+}
+#colDroite2 {
+  z-index: 10;
+}
+#colDroite2.otherNews {
+  z-index: 7;
+}
+
+#hea.hea-story {
+  background: #e5e7ee;
+}
+.hea-story .menuDr {
+  background: #fff;
+}
+
+
+.ajax-overlay .logoClip {
+  position: absolute;
+  pointer-events: none;
+}
+
+.ajax-overlay .m{
+  position: absolute;
+  pointer-events: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 37, sass/pages/_pages.scss */
+.barba-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.barba-container.no-click {
+  pointer-events: none;
+}
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 58, sass/pages/_pages.scss */
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #fff;
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+}
+
+.bg-vid-home {
+    display: block;
+    width:  100vw;
+    height: 100vh;
+    position: fixed;
+}
+.object-fit .bg-vid-home {
+    -o-object-fit: cover;
+       object-fit: cover;
+    left: 0;
+    top: 0;
+}
+.no-object-fit .bg-vid-home {
+    min-width:  100%;
+    min-height: 100%;
+    width:  auto;
+    height: auto;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+.bg-vid-home {
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  z-index: 2;
+}
+.bg-vid-home.fade-out {
+  opacity: 0;
+}
+.bg-vid-home.zindex {
+  opacity: 1;
+  z-index: 1;
+}
+
+.video-cont .videoOverlay {
+  background: #333; 
+}
+.videoOverlay img {
+  opacity: 0; 
+  visibility: hidden; 
+}
+
+.jobAnnonce {
+  max-height: none; 
+}
+
+.jobAnnonceCache .full-content{
+    height: 0;  
+    overflow: hidden; 
+    padding-bottom: 0;  
+    margin-bottom: 0; 
+}
+.jobAnnonceCache .full-content p:last-child{
+    padding-bottom: 0;  
+    margin-bottom: 0; 
+}
+
+.mobile-team-member {
+  display: none;
+}
+
+@media (max-width: 959px) {
+  .desktop-team-member {
+    display: none !important;
+  }
+  .mobile-team-member {
+    display: block;
+      padding-top: 80px;
+    background: #fff;
+  }
+  .mobile-team-member .row-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: #e5e7ee;
+  }
+  .mobile-team-member .row-1 img, .mobile-team-member .row-1 .txt-box {
+    width: 50%;
+  }
+  .mobile-team-member .row-2 {
+    background: #fff;
+  }
+  .mobile-team-member .row-3 {
+    background: #dcdfe4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mobile-team-member .row-3 > div {
+    width: 50%;
+  }
+  .mobile-team-member .row-4 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 499px) {
+  .mobile-team-member .row-1, .mobile-team-member .row-3  {
+    display: block;
+  }
+  .mobile-team-member .row-1 img, .mobile-team-member .row-1 .txt-box, .mobile-team-member .row-3 > div {
+    width: 100%;
+  }
+}

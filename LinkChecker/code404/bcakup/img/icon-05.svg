@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>tech-09</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Uptime-Home_v1" transform="translate(-771.000000, -1314.000000)">
+            <g id="Group-5" transform="translate(0.000000, 750.000000)">
+                <g id="Group-10" transform="translate(315.000000, 270.000000)">
+                    <g id="Group-4" transform="translate(350.000000, 294.000000)">
+                        <g id="tech-09" transform="translate(106.000000, 0.000000)">
+                            <rect id="Rectangle-3" fill="#D1EBFF" x="10" y="0" width="40" height="40" rx="2"></rect>
+                            <path d="M40,47.7118768 C40,49.9261601 38.5591022,50.6437111 36.8031923,49.3306699 L27,42 L4.00002553,42 C1.79087243,42 0,40.2109725 0,37.9957423 L0,14.0042577 C0,11.7927672 1.79642476,10 4.00002553,10 L35.9999745,10 C38.2091276,10 40,11.7890275 40,14.0042577 L40,47.7118768 Z M36,14.0042577 L4,14 L4,37.9957423 L28.330179,38 L36.0379583,43.7637537 L36,14.0042577 Z M20,29 C18.3431458,29 17,27.6568542 17,26 C17,24.3431458 18.3431458,23 20,23 C21.6568542,23 23,24.3431458 23,26 C23,27.6568542 21.6568542,29 20,29 Z M12,29 C10.3431458,29 9,27.6568542 9,26 C9,24.3431458 10.3431458,23 12,23 C13.6568542,23 15,24.3431458 15,26 C15,27.6568542 13.6568542,29 12,29 Z M28,29 C26.3431458,29 25,27.6568542 25,26 C25,24.3431458 26.3431458,23 28,23 C29.6568542,23 31,24.3431458 31,26 C31,27.6568542 29.6568542,29 28,29 Z" id="Combined-Shape" fill="#0074CE" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="51px" viewBox="0 0 50 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>finance-54</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Uptime-Home_v1" transform="translate(-431.000000, -1314.000000)">
+            <g id="Group-5" transform="translate(0.000000, 750.000000)">
+                <g id="Group-10" transform="translate(315.000000, 270.000000)">
+                    <g id="Group-4" transform="translate(0.000000, 294.000000)">
+                        <g id="finance-54" transform="translate(116.000000, 0.000000)">
+                            <rect id="Rectangle-3" fill="#D1EBFF" x="10" y="0" width="40" height="40" rx="2"></rect>
+                            <path d="M38.0027084,37 C39.1057821,37 40,37.8874333 40,38.999615 L40,45.000385 C40,46.1047419 39.1084602,47 38.0027084,47 L4,47 L4,48.9938589 C4,50.10182 3.11227036,51 2,51 C0.8954305,51 0,50.1017583 0,48.9938589 L0,7.0061411 C0,5.89817996 0.88772964,5 2,5 C3.1045695,5 4,5.89824172 4,7.0061411 L4,9 L18.0092049,9 C19.1086907,9 20,9.88743329 20,10.999615 L20,17.000385 C20,18.1047419 19.1017876,19 18.0092049,19 L4,19 L4,23 L29.9982567,23 C31.103789,23 32,23.8874333 32,24.999615 L32,31.000385 C32,32.1047419 31.1107383,33 29.9982567,33 L4,33 L4,37 L38.0027084,37 Z M16,13 L4,13 L4,15 L16,15 L16,13 Z M28,27 L4,27 L4,29 L28,29 L28,27 Z M36,41 L4,41 L4,43 L36,43 L36,41 Z" id="Combined-Shape" fill="#0074CE" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

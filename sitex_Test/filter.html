@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <form th:action="@{/}" th:object="${filter}" method="post">
+        
+        <p>Select Domain <select th:field="*{domain}">
+                                <option value="">all</option>
+                                <option value="telious.com">telious.com</option>
+                                <option value="fournotfour.website2.me" selected>fournotfour.website2.me</option>
+                                <option value="mis.swd.kerala.gov.in">mis.swd.kerala.gov.in</option>
+                            </select></p>
+        <table>
+                <tr>
+                    <!-- <td>Issue<input type="text" th:field="*{issue}"></td> -->
+                    <td>File Type
+                        <select th:field="*{fileType}" disabled>
+                            <option value="">all</option>
+                            <option value="webpage">only web pages (429)</option>
+                            <option value="image">only images (281)</option>
+                            <option value="other">only other (CSS/PDF/etc.) (183)</option>
+                        </select>
+                    </td>
+                    <td>HTTP
+                        <select th:field="*{http}">
+                            <option value="">all</option>
+                            <option value="http">URL starts with "http" (0)</option>
+                            <option value="https">URL starts with "https" (893)</option>
+                        </select>
+                    </td>
+                    <td>HTTP Codes
+                        <select th:field="*{httpCode}">
+                            <option value="">all</option>
+                            <option value="2xx">2xx (873)</option>
+                            <option value="3xx">3xx (13)</option>
+                            <option value="301">301 (1)</option>
+                            <option value="302">302 (12)</option>
+                            <option value="4xx">4xx (4)</option>
+                            <option value="5xx">5xx (1)</option>
+                            <option value="other">other (0)</option>
+                        </select>
+                    </td>
+                    <td>Load Time
+                        <select th:field="*{loadTime}" disabled>
+                            <option value="">all</option>
+                            <option value="0.5">0.00 to 0.50 seconds (0)</option>
+                            <option value="1.00">0.51 to 1.00 seconds (0)</option>
+                            <option value="1.50">1.01 to 1.50 seconds (361)</option>
+                            <option value="2.00">1.51 to 2.00 seconds (34)</option>
+                            <option value="2.50">2.01 to 2.50 seconds (10)</option>
+                            <option value="3.00">2.51 to 3.00 seconds (7)</option>
+                            <option value="3 gt">&gt;3 seconds (3)</option>
+                        </select>
+                    </td>
+                    <td>File Size
+                        <select th:field="*{fileSize}" disabled>
+                            <option value="">all</option>
+                            <option value="50">0-50 KB (19)</option>
+                            <option value="100">51-100 KB (388)</option>
+                            <option value="150">101-150 KB (2)</option>
+                            <option value="200">151-200 KB (2)</option>
+                            <option value="250">201-250 KB (2)</option>
+                            <option value="300">251-300 KB (0)</option>
+                            <option value="350">301-350 KB (1)</option>
+                            <option value="400">351-400 KB (0)</option>
+                            <option value="450">401-450 KB (0)</option>
+                            <option value="500">451-500 KB (0)</option>
+                            <option value="500 gt">&gt;500 KB (1)</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button type="submit">Search</button></td>
+                </tr>
+            </table>
+</form>
+</body>
+</html>

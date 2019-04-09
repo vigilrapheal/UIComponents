@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>TesterFriendly | A complete solution for testers</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- Animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <!-- color CSS you can use different color css from css/colors folder -->
+    <!-- We have chosen the skin-blue (blue.css) for this starter
+          page. However, you can choose any other skin from folder css / colors .
+-->
+    <link href="css/colors/blue-dark.css" id="theme" rel="stylesheet">
+    <link href="css/sitecxCss.css">
+
+    <!-- <link rel="stylesheet" href="css/plan/pricing.css"> -->
+
+    <link rel="stylesheet" href="css/plan/pricing.min.css">
+
+    <link rel="stylesheet" href="css/plan/layout.min.css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <style>
+        /* layout.css Style */
+        .upload-drop-zone {
+            height: 200px;
+            border-width: 2px;
+            margin-bottom: 20px;
+        }
+
+        /* skin.css Style*/
+        .upload-drop-zone {
+            color: #ccc;
+            border-style: dashed;
+            border-color: #ccc;
+            line-height: 200px;
+            text-align: center
+        }
+
+        .upload-drop-zone.drop {
+            color: #222;
+            border-color: #222;
+        }
+
+        .green-color {
+            background-color: #90EE90
+        }
+
+        .whitecolor {
+            color: antiquewhite
+        }
+
+        .pushright {
+            text-align: right;
+        }
+
+        .btn {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        /* Boostrap Buttons Styling */
+        .btn-default {
+            font-family: Raleway-SemiBold;
+            font-size: 13px;
+            color: rgba(108, 88, 179, 0.75);
+            letter-spacing: 1px;
+            line-height: 15px;
+            border: 2px solid rgba(108, 89, 179, 0.75);
+            border-radius: 40px;
+            background: transparent;
+            transition: all 0.3s ease 0s;
+        }
+
+        .btn-default:hover {
+            color: #FFF;
+            background: rgba(108, 88, 179, 0.75);
+            border: 2px solid rgba(108, 89, 179, 0.75);
+        }
+
+        .btn-primary {
+            font-family: Raleway-SemiBold;
+            font-size: 13px;
+            color: rgba(58, 133, 191, 0.75);
+            letter-spacing: 1px;
+            line-height: 15px;
+            border: 2px solid rgba(58, 133, 191, 0.75);
+            border-radius: 40px;
+            background: transparent;
+            transition: all 0.3s ease 0s;
+        }
+
+        .btn-primary:hover {
+            color: #FFF;
+            background: rgba(58, 133, 191, 0.75);
+            border: 2px solid rgba(58, 133, 191, 0.75);
+        }
+
+        .btn-success {
+            font-family: Raleway-SemiBold;
+            font-size: 13px;
+            color: rgba(103, 192, 103, 0.75);
+            letter-spacing: 1px;
+            line-height: 15px;
+            border: 2px solid rgba(103, 192, 103, 0.75);
+            border-radius: 40px;
+            background: transparent;
+            transition: all 0.3s ease 0s;
+        }
+
+        .txt-center {
+            text-align: center;
+        }
+
+        .slide-button {
+            font-size: 20px;
+        }
+
+        .btn-group {
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .center-align {
+            margin: auto;
+            justify-content: center;
+        }
+
+        .grey-box {
+            background: rgb(202, 236, 252);
+            color: black;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .shadow {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px rgb(169, 175, 175);
+        }
+
+        .greybox-font {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .pricingbBackground {
+            background: rgb(213, 247, 243);
+            border-radius: 25px;
+            padding: 20px;
+        }
+
+        @ keyframes glowing {
+            0% {
+                box-shadow: 0 0 10px #c4a300;
+            }
+
+            40% {
+                box-shadow:
+
+                    0 0 20 px #c4a300;
+
+
+            }
+
+            60% {
+                box-shadow:
+
+                    0 0 20 px #c4a300;
+
+
+            }
+
+            100% {
+                box-shadow:
+
+                    0 0 10 px #c4a300;
+
+
+            }
+        }
+
+        .checkboxGlow:hover {
+            animation: glowing 5000ms infinite;
+        }
+
+        .align-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hideArea {
+            display: none;
+        }
+
+        .no-result {
+            color: red
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+    </div>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header">
+                <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse"
+                    data-target=".navbar-collapse"><i class="fa fa-bars"></i></a>
+                <div class="top-left-part">
+                    <a class="logo" href="index.html"><b><img src="../plugins/images/pixeladmin-logo.png"
+                                alt="home" /></b><span class="hidden-xs"><img
+                                src="../plugins/images/pixeladmin-text.png" alt="home" /></span></a>
+                </div>
+                <ul class="nav navbar-top-links navbar-left m-l-20 hidden-xs">
+                    <li>
+                        <form role="search" class="app-search hidden-xs">
+                            <input type="text" placeholder="Search..." class="form-control">
+                            <a href=""><i class="fa fa-search"></i></a>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li><a class="profile-pic" href="#"> <img src="../plugins/images/users/varun.jpg" alt="user-img"
+                                width="36" class="img-circle"><b class="hidden-xs" id="nameHere"></b>
+                        </a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- Left navbar-header -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse slimscrollsidebar">
+                <ul class="nav" id="side-menu">
+                    <li style="padding: 10px 0 0;"><a href="/login" class="waves-effect"><i class="fa fa-clock-o fa-fw"
+                                aria-hidden="true"></i><span class="hide-menu">Dashboard</span></a></li>
+                    <li><a href="/profile" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i><span
+                                class="hide-menu">Profile</span></a></li>
+                    <li><a href="/run" class="waves-effect"><i class="fa fa-play fa-fw" aria-hidden="true"></i><span
+                                class="hide-menu">Run</span></a></li>
+                    <li><a href="/userManagement" class="waves-effect admin-hide"><i class="fa fa-users"
+                                aria-hidden="true"></i><span class="hide-menu"> Manage User</span></a></li>
+                    <li><a href="/roleManagement" class="waves-effect admin-hide super-admin-hide"><i
+                                class="fa fa-wrench" aria-hidden="true"></i><span class="hide-menu"> Manage
+                                Role</span></a></li>
+                    <li><a href="/domainManagement" class="waves-effect admin-hide super-admin-hide"><i
+                                class="fa fa-apple" aria-hidden="true"></i><span class="hide-menu"> Manage
+                                Domain</span></a></li>
+                    <li><a href="/planManagement" class="waves-effect admin-hide super-admin-hide"><i
+                                class="fa fa-search" aria-hidden="true"></i><span class="hide-menu"> Manage
+                                Plan</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Left navbar-header end -->
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Domain Management</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <a href="" id="logout"
+                            class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Logout</a>
+                        <ol class="breadcrumb">
+                            <li><a href="#">Dashboard</a></li>
+                            <li class="active">Domain Management</li>
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+
+                <div class="row">
+                    <div class="btn-group slide-button">
+                        <button class="btn btn-default btn-outline btn-lg" id="showDomain">
+                            <i class="fa fa-eye"></i> Show Domain
+                        </button>
+                        <button class="btn btn-default btn-outline btn-lg" id="addNewDomain">
+                            <i class="fa fa-plus"></i> Add Domain
+                        </button>
+                        <button class="btn btn-default btn-outline btn-lg" id="updateDomain">
+                            <i class="fa fa-edit"></i> Edit Domain
+                        </button>
+                    </div>
+                </div>
+                <br>
+
+                <!-- -------------------------------------------------------domain display area----------------------------------------------------------------- -->
+
+                <div class="row" id="displayDomain">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3>Domains</h3>
+                            <h5 class="align-center no-result hideArea" id="noResult">No result Found !!!</h5>
+                            <div class="row">
+                                <div class="col-md-12 hideArea" id="domainArea"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- -------------------------------------------------------Add new domain---------------------------------------------------- -->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <div style="display: none;" id="displayAddDomain">
+                                <h3>Add New Domain</h3>
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <h4>
+                                        <b>Domain Name</b>
+                                    </h4>
+                                    <br> <input type="text" id="domainName" class="form form-control btn-rounded"
+                                        placeholder="Add new Domain here ...">
+                                </div>
+                            </div>
+                            <div style="display: none;" id="displayUpdateDomain">
+                                <h3>Update Domain</h3>
+                                <hr>
+                                <div class="row">
+                                    <h4>
+                                        <b>Select Domain</b>
+                                    </h4>
+
+                                    <select id="domainFromServer" class="form form-control btn-rounded">
+                                        <option value="">------------------------------------------------------------
+                                            SELECT --------------------------------------------------</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br> <br>
+                            <div class="row hideArea" id="selectPlanViewOrnot">
+                                <h4>
+                                    <b>Select Plan</b>
+                                </h4>
+                                <!-- -------------------------------------------plan------------------------------- -->
+
+
+                                <div class="rf-subscription-plan rf-container" data-name="subPlan"
+                                    id="planTemplateShow">
+
+                                </div>
+
+                                <!-- -------------------------------------plan end---------------------------------------- -->
+                            </div>
+                            <br> <br>
+                            <div class="row">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4 align-center" style="justify-content: center">
+                                    <button id="saveOrUpdate" style="display: none;" type="button"
+                                        onclick="saveOrUpdateDomain()" class="btn btn-primary btn-lg">Save
+                                        Domain</button>
+                                </div>
+                                <div class="col-sm-4"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------------------------- -->
+                <!-- ------------------------------------------update domain-------------------------------------------- -->
+                <!-- --------------------------------------------------------------------------------------------------- -->
+
+                <!-- <div class="row" style="display: none;" id="displayUpdateDomain">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                           
+                            <br> <br>
+                            <div class="row">
+                                <h4>
+                                    <b>Select Plan</b>
+                                </h4>
+
+                            </div>
+                            <br> <br>
+                            <div class="row">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-primary btn-lg"
+                                        onclick="saveOrUpdateDomain()">Update Role</button>
+                                </div>
+                                <div class="col-sm-4"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"> 2019 &copy; Owned By
+                OpnLabs </footer>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+
+
+
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <script type="text/javascript" src="js/sitecxCommon.js"></script>
+    <script>
+        localStorage.setItem('pagesNumber', 0);
+        localStorage.setItem('totalPage', 0);
+        localStorage.setItem('completePage', false);
+        localStorage.setItem('doOnce', true);
+
+        var timeOutVariable;
+
+        $(document).ready(function () {
+            $('#nameHere').text(localStorage.getItem("userName"));
+            $.ajaxSetup({
+                headers: {
+                    'Authorization': 'Bearer ' + localStorage.getItem('token')
+                }
+            });
+
+            $('#showDomain').click(function () {
+                $('#displayDomain').show();
+                $('#displayAddDomain').hide();
+                $('#displayUpdateDomain').hide();
+                $('#saveOrUpdate').hide();
+            });
+            $('#addNewDomain').click(function () {
+                $('#displayDomain').hide();
+                $('#displayAddDomain').show();
+                $('#displayUpdateDomain').hide();
+                $('#saveOrUpdate').show();
+                $('#saveOrUpdate').text('Save Domain');
+            });
+            $('#updateDomain').click(function () {
+                $('#displayDomain').hide();
+                $('#displayAddDomain').hide();
+                $('#displayUpdateDomain').show();
+                $('#saveOrUpdate').show();
+                $('#saveOrUpdate').text('Update Domain');
+            });
+
+            getAllDomains();
+            getAllPlanDetails();
+
+        });
+
+
+        $('#domainFromServer').change(function () {
+            $.get(ip + "/plan/getPlanOfDomain",function(data){
+                
+            });
+        });
+
+
+        function saveOrUpdateDomain() {
+
+            var domainDetails;
+            if ($('#displayAddDomain').is(":hidden")) {
+
+                console.log("comming soon");
+
+                domainDetails = [{
+                    "companyDomain": $('#domainFromServer').val(),
+                    "subscriptionPlan": {
+                        "planId": $('input[name*="selectPlan"]:checked').val()
+                    }
+                }]
+
+            } else {
+                domainDetails = [{
+                    "companyDomain": getDomain(),
+                    "subscriptionPlan": {
+                        "planId": $('input[name*="selectPlan"]:checked').val()
+                    }
+                }]
+            }
+
+            $.ajax({
+                type: "POST",
+                contentType: "application/json",
+                url: ip + "/domain/registerDomain",
+                data: JSON.stringify(domainDetails),
+                dataType: 'json',
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    alert('Successfully added Domain :' + data.domainName);
+                    $('#selectPlanViewOrnot').find('input[type="text"]').val('');
+                    $('#selectPlanViewOrnot').find('input[type="radio"]').prop("checked", false);
+                    getAllDomains();
+                },
+                error: function (e) {
+                    alert('Domain not saved');
+                }
+            });
+        }
+
+        function getPageNumber(pageNumber, totalPage) {
+
+            var pageNumber = localStorage.getItem(pageNumber);
+            var totalPage = localStorage.getItem(totalPage);
+            if (pageNumber < totalPage || pageNumber === 0
+                || pageNumber === "0") {
+                return pageNumber;
+            } else {
+                console.log("Nothing more to display");
+                //clearTimeout(timeOutVariable);
+                localStorage.setItem('completePage', true);
+            }
+        }
+
+        function getAllDomains() {
+
+            var pageNumber = getPageNumber("pagesNumber", "totalPage");
+
+            if (pageNumber === 'undefined' || pageNumber === undefined)
+                return;
+
+            var url = ip + "/domain/listAllDomain?page="
+                + pageNumber + "&size=10";
+
+            $
+                .get(
+                    url,
+                    function (data) {
+
+                        if (data.length === 0 || data.content.length === 0) {
+                            $('#noResult').removeClass("hideArea");
+                            return;
+                        }
+                        else {
+                            $('#domainArea').removeClass("hideArea");
+                        }
+
+                        localStorage.setItem('pagesNumber',
+                            (data.pageable.pageNumber) + 1);
+                        var roles = data.content;
+
+                        if (localStorage.getItem('doOnce') === "true") {
+                            $('#domainArea')
+                                .append(
+                                    '<table class="table" id="domainDisplay"> <thead> <th class="bg-primary">Domain Name</th>'
+                                    + '<th class="bg-success">Domain Url</th></thead> <tbody></tbody></table>');
+
+                            localStorage.setItem('doOnce', false);
+                            localStorage.setItem('totalPage',
+                                data.totalPages);
+
+                        }
+
+                        $
+                            .each(
+                                roles,
+                                function (key, value) {
+                                    $('#domainDisplay tbody')
+                                        .append(
+                                            '<tr class="bg-primary"> <td class="bg-primary">'
+                                            + value.companyDomain
+                                            + '</td><td class="bg-success">'
+                                            + value.companyUrl
+                                            + '</td></tr>')
+
+                                    $('#domainFromServer').append($('<option></option>').attr("value", value.domainId).text(value.companyDomain))
+
+                                });
+                        if (!localStorage.getItem("completePage")
+                            || localStorage.getItem("completePage") === "false") {
+                            getAllDomains();
+                        }
+                    });
+        }
+
+        function getAllPlanDetails() {
+
+            var url = ip + "/getPlans"
+            $
+                .get(
+                    url,
+                    function (data) {
+
+                        var subscriptionPlan = data;
+                        var color = ["coral", "yellow", "skyBlue",
+                            "purple", "coral"];
+                        $
+                            .each(
+                                subscriptionPlan,
+                                function (key, value) {
+                                    $('#planTemplateShow')
+                                        .append(
+                                            '<div class="rf-package-wrap ' + color[key] +
+                                            ' "> <div class="rf-empty-col"></div><div class="rf-empty-col"></div><div class="rf-empty-col"></div><div class="rf-package"> '
+                                            + '<div class="rf-package-header"> <div class="rf-header-price-wrapper"> <div class="rf-package-title">'
+                                            + value.planName
+                                            + '</div><div class="rf-package-price"> <div class="price-per-month price-block"><span class="subscription-price">'
+                                            + value.price
+                                            + ' &#8377;</span></div><div class="price-per-year price-block"><span class="subscription-price">'
+                                            + value.price
+                                            + ' &#8377;</span></div></div><div class="rf-per rf-per-month">'
+                                            + value.planType
+                                            + '</div><div class="rf-monthly">billed '
+                                            + value.planType
+                                            + '</div></div><input type="radio" class="from checkboxGlow" ' +
+                                            'name="selectPlan" value="' + value.planId + '"> <div class="rf-subscr-descr">Suggestions for the user </div></div><div class="rf-package-body"> '
+                                            + '<div class="rf-package-body-item high"> <div class="rf-package-body-content">40 HD720&nbsp; or&nbsp; 20&nbsp; <span class="rf-uppercase">hd1080&nbsp;'
+                                            + '</span>Videos per month </div></div>'
+                                            + getFeatureList(value.featureConfig)
+                                            + '</div><div class="rf-empty-col"></div><div class="rf-empty-col"></div></div></div></div>');
+                                });
+
+                    });
+        }
+
+        function getFeatureList(featureConfig) {
+
+            var featureList = "";
+
+            if (featureConfig.linkAudit || featureConfig.linkAudit === "true") {
+                featureList += '<div class="rf-package-body-item high">Link Auditing</div>';
+            }
+
+            if (featureConfig.domainMonitor
+                || featureConfig.domainMonitor === "true") {
+                featureList += '<div class="rf-package-body-item high">Domain Monitoring</div>';
+            }
+
+            if (featureConfig.websitePerformance
+                || featureConfig.websitePerformance === "true") {
+                featureList += '<div class="rf-package-body-item high">Website Performance monitoring</div>';
+            }
+
+            if (featureConfig.sslMonitor || featureConfig.sslMonitor === "true") {
+                featureList += '<div class="rf-package-body-item high">SSL Monitoring</div>';
+            }
+
+            if (featureConfig.webSecurity
+                || featureConfig.webSecurity === "true") {
+                featureList += '<div class="rf-package-body-item high">Web Security Checking</div>';
+            }
+
+            if (featureConfig.malware || featureConfig.malware === "true") {
+                featureList += '<div class="rf-package-body-item high">Malware Checking</div>';
+            }
+
+            if (featureConfig.blackList || featureConfig.blackList === "true") {
+                featureList += '<div class="rf-package-body-item high">Black List Url monitoring</div>';
+            }
+
+            if (featureConfig.ping || featureConfig.ping === "true") {
+                featureList += '<div class="rf-package-body-item high">Ping Service</div>';
+            }
+
+            if (featureConfig.siteUpChecker
+                || featureConfig.siteUpChecker === "true") {
+                featureList += '<div class="rf-package-body-item high">Site Up Checker</div>';
+            }
+
+            return featureList;
+        }
+
+        (function () {
+            $('#btnRight').click(
+                function (e) {
+                    var selectedOpts = $('#lstBox1 option:selected');
+                    if (selectedOpts.length == 0) {
+                        alert("Nothing to move.");
+                        e.preventDefault();
+                    }
+                    if ($("#lstBox2 option[value='" + selectedOpts.val()
+                        + "']").length === 0) {
+                        $('#lstBox2').append($(selectedOpts).clone());
+                        e.preventDefault();
+                    }
+                    $(selectedOpts).remove();
+                    e.preventDefault();
+                });
+            $('#btnAllRight').click(function (e) {
+                var selectedOpts = $('#lstBox1 option');
+                if (selectedOpts.length == 0) {
+                    alert("Nothing to move.");
+                    e.preventDefault();
+                }
+                $('#lstBox2').append($(selectedOpts).clone());
+                $(selectedOpts).remove();
+                e.preventDefault();
+            });
+            $('#btnLeft').click(
+                function (e) {
+                    var selectedOpts = $('#lstBox2 option:selected');
+                    if (selectedOpts.length == 0) {
+                        alert("Nothing to move.");
+                        e.preventDefault();
+                    }
+                    if ($("#lstBox1 option[value='" + selectedOpts.val()
+                        + "']").length === 0) {
+                        $('#lstBox1').append($(selectedOpts).clone());
+                        e.preventDefault();
+                    }
+                    $(selectedOpts).remove();
+                    e.preventDefault();
+                });
+            $('#btnAllLeft').click(function (e) {
+                var selectedOpts = $('#lstBox2 option');
+                if (selectedOpts.length == 0) {
+                    alert("Nothing to move.");
+                    e.preventDefault();
+                }
+                $('#lstBox1').append($(selectedOpts).clone());
+                $(selectedOpts).remove();
+                e.preventDefault();
+            });
+        }(jQuery));
+
+        function getDomain() {
+            var url = $('#domainName').val();
+            return url.replace('http://', '').replace('https://', '').replace(
+                'www.', '').split(/[/?#]/)[0];
+        }
+    </script>
+</body>
+
+</html>

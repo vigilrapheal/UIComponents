@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="54px" viewBox="0 0 58 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.1678479%" y1="2.33308149%" x2="50.1678479%" y2="92.3235897%" id="linearGradient-1">
+            <stop stop-color="#FFA330" offset="0%"></stop>
+            <stop stop-color="#F07379" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="10.5528118%" y1="16.6460302%" x2="88.8795826%" y2="80.6152142%" id="linearGradient-2">
+            <stop stop-color="#9C95FF" offset="0%"></stop>
+            <stop stop-color="#766DE8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="27.0292823%" y1="11.5165794%" x2="80.5795826%" y2="90.710558%" id="linearGradient-3">
+            <stop stop-color="#9C95FF" offset="0%"></stop>
+            <stop stop-color="#766DE8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.7862416%" y1="3.49202597%" x2="49.7862416%" y2="92.3810099%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#BED5FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="47.9856661%" y1="-88.1137486%" x2="51.0646685%" y2="134.455753%" id="linearGradient-5">
+            <stop stop-color="#16CD6F" offset="0%"></stop>
+            <stop stop-color="#58F17B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="47.9537633%" y1="-89.9097166%" x2="51.0238938%" y2="132.016861%" id="linearGradient-6">
+            <stop stop-color="#16CD6F" offset="0%"></stop>
+            <stop stop-color="#58F17B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="48.0994152%" y1="-85.2339181%" x2="51.1695906%" y2="136.549708%" id="linearGradient-7">
+            <stop stop-color="#16CD6F" offset="0%"></stop>
+            <stop stop-color="#58F17B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Subscription-Plans" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Subscription-Plans-V2" transform="translate(-737.000000, -1520.000000)">
+            <g id="Group-5-Copy-5" transform="translate(737.000000, 1518.000000)">
+                <g id="Group-4" transform="translate(0.000000, 2.000000)">
+                    <path d="M56.7841973,26.4698989 C60.6068837,17.7549104 54.9447092,9.22953682 46.3652213,5.34972608 C37.7857334,1.46991533 27.2984951,6.33791096 23.4758087,15.0528994 C19.652874,23.7669431 23.5131629,33.9765336 32.0984096,37.8577268 C40.6994539,41.7375376 52.961511,35.1848873 56.7841973,26.4698989 Z" id="Oval-2-Copy-Copy" fill="url(#linearGradient-1)"></path>
+                    <path d="M52.188352,35.9766482 C54.6856323,36.2333147 56.9403946,34.3445127 57.7466032,31.7712667 C58.9723025,27.8225516 55.4918409,25.262468 52.8700243,26.1904161 C50.2482077,27.1183641 48,28.3819529 48,31.0802415 C48,33.7785302 49.6779626,35.7199817 52.188352,35.9766482 Z" id="Oval-2-Copy-3-2-Copy" fill="url(#linearGradient-2)"></path>
+                    <path d="M31.1919533,53.7792794 C36.8789643,54.8223471 42.4167306,52.0612855 44.7575169,47.7586312 C49.10918,38.8081898 41.1599326,34.7202848 34.3496583,41.0937353 C28.9689918,46.1633511 24.3345491,42.9651215 22.3472373,47.3061238 C20.63485,51.0412266 25.5206522,52.728542 31.1919533,53.7792794 Z" id="Oval-2-Copy-3-3-Copy" fill="url(#linearGradient-3)"></path>
+                    <g id="Group-3">
+                        <path d="M0.511698771,28.419894 C-1.65827742,18.0664888 3.21670775,7.50907061 12.4173199,2.63671377 C21.6179321,-2.23564306 32.8714386,-0.219370328 39.9004775,7.56082706 C46.9295164,15.3410244 47.9977764,26.9632844 42.5093673,35.944549 C37.0209582,44.9258136 26.3316253,49.0475335 16.4040266,46.0105561 C11.4421522,44.4696927 6.20443898,44.0898034 1.07928191,44.8990582 L0.221994878,45.0379955 C1.59438411,39.5987195 1.69363148,33.9056551 0.511698771,28.419894 Z" id="Shape-4-Copy" fill="url(#linearGradient-4)"></path>
+                        <g id="Group-2" transform="translate(14.090090, 21.401786)">
+                            <path d="M8.4664552,4.05789008 C7.50124491,4.05575556 6.67179908,3.37091097 6.48494034,2.42182215 C6.2980816,1.47273332 6.80579407,0.523436885 7.69784632,0.153988698 C8.58989857,-0.215459489 9.61812156,0.0977211036 10.1542323,0.902165341 C10.6903431,1.70660958 10.5851956,2.77852098 9.90303884,3.46292133 C9.52152089,3.8438434 9.00497642,4.05777304 8.4664552,4.05789008 Z" id="Shape-5-Copy" fill="url(#linearGradient-5)"></path>
+                            <path d="M15.2514154,4.06963711 C14.4291954,4.07204318 13.6867115,3.5771658 13.3709516,2.81627782 C13.0551916,2.05538984 13.2285104,1.17874803 13.8099103,0.596036599 C14.3913101,0.0133251675 15.2659788,-0.160384622 16.0251542,0.156087658 C16.7843295,0.472559939 17.278093,1.21671875 17.2756924,2.04079365 C17.2724321,3.15993667 16.3680395,4.06636952 15.2514154,4.06963711 Z" id="Shape-6-Copy" fill="url(#linearGradient-6)"></path>
+                            <ellipse id="Oval-Copy" fill="url(#linearGradient-7)" cx="2.03021323" cy="2.03479315" rx="2.03021323" ry="2.03479315"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

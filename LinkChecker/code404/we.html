@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>Value or website name with domain</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="">
+<link rel="stylesheet" href="./css/newcode404.css">
+<link rel="stylesheet" href="./css/code404.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" async="" src="./js/86058d0211aee45b13ffa2a65563b2b15d13ced7.2.js"></script>
+<script type="text/javascript" async="" src="./js/i.js"></script>
+<script async="" src="./js/fs.js"></script>
+<script async="" src="./js/analytics.js"></script>
+<script async="" src="./js/rum.js"></script>
+<script src="./f.txt"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="./js/app.js"></script>
+
+<style>
+/* latin-ext */
+
+@font-face {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+src: local('Roboto'), local('Roboto-Regular'), url(chrome-extension://mmglbdoopeimbdhemfkhkinddmkkdlch/ui/assets/fonts/Roboto-Regular.ttf) format('ttf');
+unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+</style>
+</head>
+
+<body class="body-marketing transparent-header" data-gr-c-s-loaded="true">
+<div id="page-surface">
+<div class="site-container">
+<header class="site-header" data-initial-menu="domaintools">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand" href="#">
+<img src="" alt="#">
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-navbar" aria-controls="header-navbar" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="header-navbar">
+<ul class="navbar-nav mr-auto">
+<li data-menu="pricing" class="nav-item">
+<a class="nav-link" href="#">Pricing</a>
+</li>
+<li data-menu="support" class="nav-item">
+<a class="nav-link" href="#">Get in Touch!!</a>
+</li>
+</ul>
+<a class="btn btn-outline-dark-8 my-2 my-md-0 mr-3" href="#">Log In</a>
+<a class="btn btn-primary my-2 my-md-0 ml-md-2" href="#">Free Trial</a>
+</div>
+</div>
+</nav>
+</header>
+<script>
+(function() {
+// Set initial item to set active
+// We do this here before doc load to avoid flicker
+var header = document.querySelector('header.site-header');
+var init = header.getAttribute('data-initial-menu');
+var elem = header.querySelector('[data-menu~="' + init + '"]');
+if (elem) {
+elem.classList.add('active');
+}
+})();
+</script>
+<div class="container">
+<div id="alert-messages"></div>
+<div id="alert-messages-dynamic"></div>
+</div>
+<div id="domain-health-page-header" class="bg-image-1 bg-dark-16 text-dark-8">
+<div class="site-header-spacer"></div>
+<div class="container pt-5 pb-5">
+<div class="row">
+<div class="col-lg-3 mb-5 mb-lg-0">
+<h1 class="font-weight-normal pt-4">
+<span class="d-block font-16 font-weight-normal mb-2 text-dark-8" >Domain Monitoring for</span>
+<span class="d-block font-32 text-white" >Website that we are checking
+<a target="_blank" class="font-18 font-weight-normal text-dark-8" href="#" ></a>
+</span>
+</h1>
+</div>
+<div class="col-lg-9">
+</div>
+</div>
+</div>
+</div>
+<div id="domain-health-page-results" class="mb-6">
+<div id="domainHealthResultsDisplay">
+<div>
+<div class="create-checks-bar bg-primary">
+<div class="container-marketing-only d-md-flex align-items-md-center">
+<div class="mb-3 mb-md-0" style="flex: 1 1 50%;">
+<h4 class="text-white">Checks Selected: 9</h4>
+<p class="mb-0">Select
+<span></span>
+<a class="text-white" href="#">all</a>,
+<span></span>
+<a class="text-white" href="#">none</a>
+<span></span>or individually below.
+</p>
+</div>
+<div style="flex: 1 1 50%;">
+<div class="d-md-flex align-items-md-center">
+<p class="mb-3 mb-md-0 mr-4">Start a 14-day free trial (no credit card required) to schedule these checks.</p>
+<button class="btn btn-white text-primary">Start Free Trial</button>
+</div>
+</div>
+</div>
+</div>
+<div class="container-marketing-only my-5">
+<div class="results-table mb-5">
+<div class="d-flex align-items-center mb-4">
+<div class="icon">
+<i class="fas fa-sm fa-exchange-alt"></i>
+</div>
+<h4 class="mb-0">Link Checker</h4>
+</div>
+<div class=" white-block p-4">
+<table id="dtVerticalScrollExample" class="table listing-table table-valign-middle table-responsive-lg">
+<thead>
+<tr>
+
+<th style="width: 25px;">CODE TYPE</th>
+
+<th style="width: 155px;">Result</th>
+
+</tr>
+</thead>
+</table>
+<div class="table-wrapper-scroll-y ">
+<table id="dtVerticalScrollExample" class="table listing-table table-valign-middle table-responsive-lg">
+<tbody>
+<tr>
+<td>DNS</td>
+<td>Click "More Info" to review your DNS records.</td>
+</tr>
+<tr style="display: none;"></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="results-table mb-5">
+<div class="d-flex align-items-center mb-4">
+<div class="icon">
+<i class="fas fa-sm fa-globe"></i>
+</div>
+<h4 class="mb-0">DNS</h4>
+</div>
+<div class="white-block p-4">
+<table class="table listing-table table-valign-middle table-responsive-lg">
+<thead>
+<tr>
+<th style="width: 40px;"></th>
+<th style="width: 25px;"></th>
+<th>Type</th>
+<th>Result</th>
+<th style="width: 115px;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355290--4--" name="check-13355290" class="custom-control-input" value="on">
+<label for="check-13355290--4--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+
+</td>
+<td>DOMAIN EXPIRY DATE</td>
+<td>HTTP OK: HTTP/1.1 302 Found - 400 bytes in 2.097 second response time</td>
+<td class="text-right"></td>
+</tr>
+<tr style="display: none;"></tr>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355292--5--" name="check-13355292" class="custom-control-input" value="on">
+<label for="check-13355292--5--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="OK fas fa-fw"></i>
+</td>
+<td>REMAINING DAYS</td>
+<td>HTTP OK: HTTP/1.1 200 OK - 539 bytes in 3.249 second response time</td>
+<td class="text-right">
+</td>
+</tr>
+<tr style="display: none;"></tr>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355293--6--" name="check-13355293" class="custom-control-input" value="on">
+<label for="check-13355293--6--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="OK fas fa-fw"></i>
+</td>
+<td>NAME SERVER</td>
+<td>SSL_CERT OK - x509 certificate 'kerala.gov.in' from 'GeoTrust EV RSA CA 2018' valid until Jan 22 12:00:00 2020 GMT (expires in 519 days)</td>
+<td class="text-right">
+
+</td>
+</tr>
+<tr style="display: none;"></tr>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355294--7--" name="check-13355294" class="custom-control-input" value="on">
+<label for="check-13355294--7--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="CRITICAL fas fa-fw"></i>
+</td>
+<td>Ping (ICMP)</td>
+<td>PING CRITICAL - Packet loss = 100%</td>
+<td class="text-right">
+
+</td>
+</tr>
+<tr style="display: none;"></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="results-table mb-5">
+<div class="d-flex align-items-center mb-4">
+<div class="icon">
+<i class="fas fa-sm fa-globe"></i>
+</div>
+<h4 class="mb-0">Web Server</h4>
+</div>
+<div class="white-block p-4">
+<table class="table listing-table table-valign-middle table-responsive-lg">
+<thead>
+<tr>
+<th style="width: 40px;"></th>
+<th style="width: 25px;"></th>
+<th>Type</th>
+<th>Result</th>
+<th style="width: 115px;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355290--4--" name="check-13355290" class="custom-control-input" value="on">
+<label for="check-13355290--4--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="OK fas fa-fw"></i>
+</td>
+<td>HTTP</td>
+
+<td>HTTP OK: HTTP/1.1 302 Found - 400 bytes in 2.097 second response time</td>
+<td class="text-right">
+
+</td>
+</tr>
+<tr style="display: none;"></tr>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355292--5--" name="check-13355292" class="custom-control-input" value="on">
+<label for="check-13355292--5--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="OK fas fa-fw"></i>
+</td>
+<td>HTTPS</td>
+
+<td>HTTP OK: HTTP/1.1 200 OK - 539 bytes in 3.249 second response time</td>
+<td class="text-right">
+
+</td>
+</tr>
+<tr style="display: none;"></tr>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355293--6--" name="check-13355293" class="custom-control-input" value="on">
+<label for="check-13355293--6--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="OK fas fa-fw"></i>
+</td>
+<td>SSL Certificate</td>
+<td>SSL_CERT OK - x509 certificate 'kerala.gov.in' from 'GeoTrust EV RSA CA 2018' valid until Jan 22 12:00:00 2020 GMT (expires in 519 days)</td>
+<td class="text-right">
+
+</td>
+</tr>
+<tr style="display: none;"></tr>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355294--7--" name="check-13355294" class="custom-control-input" value="on">
+<label for="check-13355294--7--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="CRITICAL fas fa-fw"></i>
+</td>
+<td>Ping (ICMP)</td>
+
+<td>PING CRITICAL - Packet loss = 100%
+</td>
+<td class="text-right">
+
+</td>
+</tr>
+<tr style="display: none;"></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="results-table mb-5">
+<div class="d-flex align-items-center mb-4">
+<div class="icon">
+<i class="fas fa-sm fa-bug"></i>
+</div>
+<h4 class="mb-0">Blacklist/Malware</h4>
+</div>
+<div class="white-block p-4">
+<table class="table listing-table table-valign-middle table-responsive-lg">
+<thead>
+<tr>
+<th style="width: 40px;"></th>
+<th style="width: 25px;"></th>
+<th>Type</th>
+
+<th>Result</th>
+<th style="width: 115px;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355289--10--" name="check-13355289" class="custom-control-input" value="on">
+<label for="check-13355289--10--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="OK fas fa-fw"></i>
+</td>
+<td>Virus &amp; Malware</td>
+
+<td>MALWARE OK
+</td>
+<td class="text-right">
+<a href="#" class="text-primary">
+<i class="fas fa-info-circle"></i>&nbsp;More Info
+</a>
+</td>
+</tr>
+<tr style="display: none;"></tr>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355296--11--" name="check-13355296" class="custom-control-input" value="on">
+<label for="check-13355296--11--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="OK fas fa-fw"></i>
+</td>
+<td>Blacklist</td>
+<td>OK: 117.239.77.97 not on known spam blacklists (91 blacklists checked.)</td>
+<td class="text-right">
+<a href="#" class="text-primary">
+<i class="fas fa-info-circle"></i>&nbsp;More Info
+</a>
+</td>
+</tr>
+<tr style="display: none;"></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="results-table mb-5">
+<div class="d-flex align-items-center mb-4">
+<div class="icon">
+<i class="fas fa-sm fa-envelope"></i>
+</div>
+<h4 class="mb-0">EXTERNAL LINKS</h4>
+</div>
+<div class="white-block p-4">
+<table class="table listing-table table-valign-middle table-responsive-lg">
+<thead>
+<tr>
+<th style="width: 40px;"></th>
+<th style="width: 25px;"></th>
+<th>Type</th>
+<!-- <th >Test</th> -->
+<th>Result</th>
+<th style="width: 115px;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355291--8--" name="check-13355291" class="custom-control-input" value="on">
+<label for="check-13355291--8--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="OK fas fa-fw"></i>
+</td>
+<td>SOCIAL MEDIA</td>
+
+<td>SMTP OK - 2.440 sec. response time</td>
+<td class="text-right">
+</td>
+</tr>
+<tr style="display: none;"></tr>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355291--8--" name="check-13355291" class="custom-control-input" value="on">
+<label for="check-13355291--8--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="OK fas fa-fw"></i>
+</td>
+<td>URL SHORTNER</td>
+<td>SMTP OK - 2.440 sec. response time</td>
+<td class="text-right"> </a> -->
+</td>
+</tr>
+<tr style="display: none;"></tr>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355291--8--" name="check-13355291" class="custom-control-input" value="on">
+<label for="check-13355291--8--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="OK fas fa-fw"></i>
+</td>
+<td>PDF</td>
+<td>SMTP OK - 2.440 sec. response time</td>
+<td class="text-right"> </a> -->
+</td>
+</tr>
+<tr style="display: none;"></tr>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355291--8--" name="check-13355291" class="custom-control-input" value="on">
+<label for="check-13355291--8--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="OK fas fa-fw"></i>
+</td>
+<td>AUDIO</td>
+<td>SMTP OK - 2.440 sec. response time</td>
+<td class="text-right">
+</td>
+</tr>
+<tr style="display: none;"></tr>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355291--8--" name="check-13355291" class="custom-control-input" value="on">
+<label for="check-13355291--8--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="OK fas fa-fw"></i>
+</td>
+<td>DOC'S</td>
+<td>SMTP OK - 2.440 sec. response time</td>
+<td class="text-right">
+</td>
+</tr>
+<tr style="display: none;"></tr>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355291--8--" name="check-13355291" class="custom-control-input" value="on">
+<label for="check-13355291--8--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="OK fas fa-fw"></i>
+</td>
+<td>VIDEO</td>
+<td>SMTP OK - 2.440 sec. response time</td>
+<td class="text-right">
+</td>
+</tr>
+<tr style="display: none;"></tr>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355291--8--" name="check-13355291" class="custom-control-input" value="on">
+<label for="check-13355291--8--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="OK fas fa-fw"></i>
+</td>
+<td>IN-LINK</td>
+<td>SMTP OK - 2.440 sec. response time</td>
+<td class="text-right">
+</td>
+</tr>
+<tr style="display: none;"></tr>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355291--8--" name="check-13355291" class="custom-control-input" value="on">
+<label for="check-13355291--8--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="OK fas fa-fw"></i>
+</td>
+<td>EXTERNAL-LINK</td>
+<td>SMTP OK - 2.440 sec. response time</td>
+<td class="text-right">
+</td>
+</tr>
+<tr style="display: none;"></tr>
+<tr>
+<td class="nowrap text-center">
+<div class="custom-control custom-checkbox p-0">
+<input type="checkbox" id="check-13355295--9--" name="check-13355295" class="custom-control-input" value="on">
+<label for="check-13355295--9--" class="custom-control-label"></label>
+</div>
+</td>
+<td>
+<i class="CRITICAL fas fa-fw"></i>
+</td>
+<td>IMAGES</td>
+<td>CRITICAL - Socket timeout after 10 seconds</td>
+<td class="text-right">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="site-footer bg-dark text-dark-8 font-weight-semibold">
+<div class="container py-5">
+<div class="row">
+<div class="col-12 col-lg-4 mb-5 mb-lg-0">
+<a href="#">
+<img class="mb-5" src="" alt="#">
+</a>
+<ul class="list">
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+</ul>
+</div>
+<div class="col-12 col-lg-8">
+<div class="row align-self-stretch">
+<div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+</div>
+<div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+</div>
+<div class="col-12 col-sm-6 col-lg-3 mb-5 mb-sm-0">
+
+</div>
+<div class="col-12 col-sm-6 col-lg-3">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="copyright ">
+<div class="container">
+<div class="row"></div>
+
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<div id="page-popups"></div>
+<div id="uptime-message-box" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="uptime-message-box-title" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+
+</div>
+<div class="modal-body"></div>
+<div class="modal-footer">
+
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+var _kmq = _kmq || [];
+var _kmk = _kmk || '86058d0211aee45b13ffa2a65563b2b15d13ced7';
+
+function _kms(u) {
+setTimeout(function() {
+var d = document,
+f = d.getElementsByTagName('script')[0],
+s = d.createElement('script');
+s.type = 'text/javascript';
+s.async = true;
+s.src = u;
+f.parentNode.insertBefore(s, f);
+}, 1);
+}
+_kms('//i.kissmetrics.com/i.js');
+_kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+</script>
+<script type="text/javascript">
+window.kmRecordEvent = function(e, p) {
+var ev = ['record', e];
+if (p) {
+ev.push(p);
+}
+_kmq.push(ev);
+};
+document.addEventListener('DOMContentLoaded', function() {
+$('[data-km-cta]').on('click', function(e) {
+var props = {};
+$.each(this.attributes, function() {
+if (this.specified && this.name.indexOf('data-km-') === 0) {
+props[this.name.substr(8).replace('-', ' ')] = this.value;
+}
+});
+_kmq.push(['record', 'call to action', props]);
+});
+});
+</script>
+<div aria-hidden="true" style="position: fixed; top: -9999px; right: -9999px; width: 1px; height: 1px;">
+<i class="fas fa-bell"></i>
+<i class="far fa-bell"></i>
+<i class="fab fa-font-awesome"></i>
+</div>
+</body>
+
+</html>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#dtDynamicVerticalScrollExample').DataTable({
+"scrollY": "50vh",
+"scrollCollapse": true,
+});
+$('.dataTables_length').addClass('bs-select');
+});
+</script>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>Pixel Admin - Responsive Admin Dashboard Template build
+        with Twitter Bootstrap</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- Animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <!-- color CSS you can use different color css from css/colors folder -->
+    <!-- We have chosen the skin-blue (blue.css) for this starter
+          page. However, you can choose any other skin from folder css / colors .
+-->
+    <link href="css/colors/blue-dark.css" id="theme" rel="stylesheet">
+    <link href="css/sitecxCss.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <style>
+        /* layout.css Style */
+        .upload-drop-zone {
+            height: 200px;
+            border-width: 2px;
+            margin-bottom: 20px;
+        }
+
+        /* skin.css Style*/
+        .upload-drop-zone {
+            color: #ccc;
+            border-style: dashed;
+            border-color: #ccc;
+            line-height: 200px;
+            text-align: center
+        }
+
+        .upload-drop-zone.drop {
+            color: #222;
+            border-color: #222;
+        }
+
+        .green-color {
+            background-color: #90EE90
+        }
+
+        .whitecolor {
+            color: antiquewhite
+        }
+
+        .pushright {
+            text-align: right;
+        }
+
+        .btn {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        /* Boostrap Buttons Styling */
+        .btn-default {
+            font-family: Raleway-SemiBold;
+            font-size: 13px;
+            color: rgba(108, 88, 179, 0.75);
+            letter-spacing: 1px;
+            line-height: 15px;
+            border: 2px solid rgba(108, 89, 179, 0.75);
+            border-radius: 40px;
+            background: transparent;
+            transition: all 0.3s ease 0s;
+        }
+
+        .btn-default:hover {
+            color: #FFF;
+            background: rgba(108, 88, 179, 0.75);
+            border: 2px solid rgba(108, 89, 179, 0.75);
+        }
+
+        .btn-primary {
+            font-family: Raleway-SemiBold;
+            font-size: 13px;
+            color: rgba(58, 133, 191, 0.75);
+            letter-spacing: 1px;
+            line-height: 15px;
+            border: 2px solid rgba(58, 133, 191, 0.75);
+            border-radius: 40px;
+            background: transparent;
+            transition: all 0.3s ease 0s;
+        }
+
+        .btn-primary:hover {
+            color: #FFF;
+            background: rgba(58, 133, 191, 0.75);
+            border: 2px solid rgba(58, 133, 191, 0.75);
+        }
+
+        .btn-success {
+            font-family: Raleway-SemiBold;
+            font-size: 13px;
+            color: rgba(103, 192, 103, 0.75);
+            letter-spacing: 1px;
+            line-height: 15px;
+            border: 2px solid rgba(103, 192, 103, 0.75);
+            border-radius: 40px;
+            background: transparent;
+            transition: all 0.3s ease 0s;
+        }
+
+        .txt-center {
+            text-align: center;
+        }
+
+        .slide-button {
+            font-size: 20px;
+        }
+
+        .btn-group {
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .no-result {
+            color: red
+        }
+
+        .align-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+    </div>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header">
+                <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse"
+                    data-target=".navbar-collapse"><i class="fa fa-bars"></i></a>
+                <div class="top-left-part">
+                    <a class="logo" href="index.html"><b><img src="../plugins/images/pixeladmin-logo.png"
+                                alt="home" /></b><span class="hidden-xs"><img
+                                src="../plugins/images/pixeladmin-text.png" alt="home" /></span></a>
+                </div>
+                <ul class="nav navbar-top-links navbar-left m-l-20 hidden-xs">
+                    <li>
+                        <form role="search" class="app-search hidden-xs">
+                            <input type="text" placeholder="Search..." class="form-control">
+                            <a href=""><i class="fa fa-search"></i></a>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li><a class="profile-pic" href="#"> <img src="../plugins/images/users/varun.jpg" alt="user-img"
+                                width="36" class="img-circle"><b class="hidden-xs" id="nameHere"></b>
+                        </a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- Left navbar-header -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse slimscrollsidebar">
+                <ul class="nav" id="side-menu">
+                    <li style="padding: 10px 0 0;"><a href="/login" class="waves-effect"><i class="fa fa-clock-o fa-fw"
+                                aria-hidden="true"></i><span class="hide-menu">Dashboard</span></a></li>
+                    <li><a href="/profile" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i><span
+                                class="hide-menu">Profile</span></a></li>
+                    <li><a href="/run" class="waves-effect"><i class="fa fa-play fa-fw" aria-hidden="true"></i><span
+                                class="hide-menu">Run</span></a></li>
+                    <li><a href="/userManagement" class="waves-effect admin-hide"><i class="fa fa-users"
+                                aria-hidden="true"></i><span class="hide-menu"> Manage User</span></a></li>
+                    <li><a href="/roleManagement" class="waves-effect admin-hide super-admin-hide"><i
+                                class="fa fa-wrench" aria-hidden="true"></i><span class="hide-menu"> Manage
+                                Role</span></a></li>
+                    <li><a href="/domainManagement" class="waves-effect admin-hide super-admin-hide"><i
+                                class="fa fa-apple" aria-hidden="true"></i><span class="hide-menu"> Manage
+                                Domain</span></a></li>
+                    <li><a href="/planManagement" class="waves-effect admin-hide super-admin-hide"><i
+                                class="fa fa-search" aria-hidden="true"></i><span class="hide-menu"> Manage
+                                Plan</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Left navbar-header end -->
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">User Management</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <a href="" id="logout"
+                            class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Logout</a>
+                        <ol class="breadcrumb">
+                            <li><a href="#">Dashboard</a></li>
+                            <li class="active">User Management</li>
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+
+                <div class="row">
+                    <div class="btn-group slide-button">
+                        <button class="btn btn-default btn-outline btn-lg" id="showUser">
+                            <i class="fa fa-eye"></i> Show User
+                        </button>
+                        <button class="btn btn-default btn-outline btn-lg" id="addNewUser">
+                            <i class="fa fa-plus"></i> Add User
+                        </button>
+                        <button class="btn btn-default btn-outline btn-lg" id="updateUser">
+                            <i class="fa fa-edit"></i> Add New Role
+                        </button>
+                    </div>
+                </div>
+                <br>
+                <div class="row" id="displayUser">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3>Users</h3>
+                            <h5 class="align-center no-result hide" id="noResult">No result Found !!!</h5>
+                            <table class="table table-striped hide" id="userResultHide">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">User Name</th>
+                                        <th scope="col">Company Name</th>
+                                        <th scope="col">SiteCX Role</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="showArea">
+                                    <!-- <tr>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+										<td>Mark</td>
+									</tr>
+									<tr>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+										<td>Mark</td>
+									</tr>
+									<tr>
+										<td>Larry</td>
+										<td>the Bird</td>
+										<td>@twitter</td>
+										<td>Mark</td>
+									</tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="display: none;" id="displayAddUser">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3>Add Users</h3>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Name <span style="color: red">&ast;</span></td>
+                                        <td><input type="text" id="name" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>User Email <span style="color: red">&ast;</span></td>
+                                        <td><input type="email" id="email" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Designation <span style="color: red">&ast;</span></td>
+                                        <td><select class="form-control" name="" id="designation">
+                                                <option value="">---------- Select-----------</option>
+                                                <option value="developer">Developer</option>
+                                                <option value="tester">Tester</option>
+                                                <option value="marketing">Marketing</option>
+                                                <option value="sales">Sales</option>
+                                            </select></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Select Role <span style="color: red">&ast;</span></td>
+                                        <td><select class="form-control" name="" id="role">
+                                                <option value="">---------- Select-----------</option>
+                                            </select></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="2" align="center"><button id="addButton"
+                                                class="btn btn-success btn-rounded">
+                                                <i class="fa fa-plus"></i> Add User
+                                            </button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row" style="display: none;" id="displayUpdateUser">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3>Update Users</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"> 2019 &copy; Owned By
+                OpnLabs </footer>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+
+
+
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <script type="text/javascript" src="js/sitecxCommon.js"></script>
+    <script>
+        if (localStorage.getItem('token') === '') {
+            alert('You Dont have sufficient permission to access this page');
+            window.location.href = "/";
+        }
+        $(document).ready(function () {
+            $('#nameHere').text(localStorage.getItem("userName"));
+            $.ajaxSetup({
+                headers: {
+                    'Authorization': 'Bearer ' + localStorage.getItem('token')
+                }
+            });
+
+            getAllRoles();
+
+            getAllUserDetails();
+
+            $('#showUser').click(function () {
+                $('#displayUser').show();
+                $('#displayAddUser').hide();
+                $('#displayUpdateUser').hide();
+            });
+            $('#addNewUser').click(function () {
+                $('#displayUser').hide();
+                $('#displayAddUser').show();
+                $('#displayUpdateUser').hide();
+            });
+            $('#updateUser').click(function () {
+                $('#displayUser').hide();
+                $('#displayAddUser').hide();
+                $('#displayUpdateUser').show();
+            });
+
+            $('#addButton').click(function () {
+                registerUser();
+            })
+        });
+
+        function registerUser() {
+
+            var oldUserDetails = JSON
+                .parse(localStorage.getItem("userDetails"));
+
+            var newUser = {
+                "name": $('#name').val(),
+                "role": {
+                    "roleId": $("#role option:selected").val()
+                },
+                "personalDetails": {
+                    "designation": $('#designation').val(),
+                    "email": $('#email').val(),
+                    "companyName": oldUserDetails.personalDetails.companyName
+                }
+            }
+
+            $.ajax({
+                url: 'http://192.168.35.6:8009/rest/register',
+                type: 'post',
+                dataType: 'json',
+                contentType: 'application/json',
+                data: JSON.stringify(newUser),
+                success: function (data) {
+                    $('#displayAddUser').find('input:text').val('');
+                    $('#displayAddUser').find('select')
+                        .prop('selectedIndex', 0);
+                },
+                error: function (e) {
+                    alert("User already Exist");
+                }
+            })
+        }
+
+        function getAllRoles() {
+            $.get("http://192.168.35.6:8009/role/getrole", function (data) {
+                var roles = data;
+
+                $.each(roles, function (key, value) {
+
+                    $('#role').append(
+                        $("<option></option>").attr("value", value[0])
+                            .text(value[1]));
+                })
+
+            });
+        }
+
+        function getAllUserDetails() {
+            var oldUserDetails = JSON
+                .parse(localStorage.getItem("userDetails"));
+            $.get("http://192.168.35.6:8009/user/showAllUsers?companyName="
+                + oldUserDetails.personalDetails.companyName,
+                function (data) {
+
+                    if (data.length === 0)
+                        $('#noResult').removeClass('hide');
+                    else
+                        $('#userResultHide').removeClass('hide');
+
+                    $.each(data, function (key, value) {
+
+                        $('#showArea').append(
+                            "<tr><td>" + value.name + "</td><td>"
+                            + value.userName + "</td><td>"
+                            + value.personalDetails.companyName
+                            + "</td><td>" + value.role.roleName
+                            + "</td></tr>");
+                    })
+
+                });
+        }
+    </script>
+</body>
+
+</html>

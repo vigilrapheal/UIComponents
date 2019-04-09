@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <table border="1" cellspacing="0" style="width: 100%">
+        <thead>
+		<tr>
+			<th>slno</th>
+			<th>Domain</th>
+			<th>No.of Error</th>
+			<th>No.of Pages</th>
+            <th>No.of Links</th>
+            <th>Response</th>
+            <th>Remark</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="addHere">
+        <tr>
+            <td>1</td>
+            <td>opnlabs</td>
+            <td>10</td>
+            <td>100</td>
+            <td>90</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>Ready</td>
+                        <td><input type="checkbox"></td>
+                        <td>Not Ready</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Waiting</td>
+                        <td><input type="checkbox"></td>
+                        <td>NA</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                </table>
+            </td>
+            <td><textarea></textarea></td>
+            <td><button>Send Link</button></td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>opnlabs</td>
+            <td>10</td>
+            <td>100</td>
+            <td>90</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>Ready</td>
+                        <td><input type="checkbox"></td>
+                        <td>Not Ready</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Waiting</td>
+                        <td><input type="checkbox"></td>
+                        <td>NA</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                </table>
+            </td>
+            <td><textarea></textarea></td>
+            <td><button>Send Link</button></td>
+        </tr>
+    </tbody>
+    </table>
+    <script>
+    
+/*     $.ajax(
+    		{
+    			url: "demo_test.txt", 
+    			success: function(result){ */
+    				
+    				$( document ).ready(function() {
+    					var i;
+    					for (i = 0; i < 100; i++) { 
+    				 $("#addHere").append('<tr>'+
+    			                '<td>'+(i+1)+'</td>'+
+    			                '<td>opnlabs</td>'+
+    			                '<td>10</td>'+
+    			                '<td>100</td>'+
+    			                '<td>90</td>'+
+    			                '<td>'+
+    			                    '<table>'+
+    			                        '<tr>'+
+    			                            '<td>Ready</td>'+
+    			                            '<td><input type=\"checkbox\"></td>'+
+    			                            '<td>Not Ready</td>'+
+    			                            '<td><input type=\"checkbox\"></td>'+
+    			                        '</tr>'+
+    			                        '<tr>'+
+    			                            '<td>Waiting</td>'+
+    			                            '<td><input type=\"checkbox\"></td>'+
+    			                            '<td>NA</td>'+
+    			                            '<td><input type=\"checkbox\"></td>'+
+    			                        '</tr>'+
+    			                    '</table>'+
+    			                '</td>'+
+    			                '<td><textarea></textarea></td>'+
+    			                '<td><button>Send Link</button></td>'+
+    			            '</tr>');
+    					}
+    				});
+    				
+/*    				}
+    		}); */
+    
+    
+       
+    </script>
+</body>
+</html>

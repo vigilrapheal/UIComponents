@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="43px" viewBox="0 0 64 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Subscription-Plans" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Video-Maker-Single-Purchase" transform="translate(-588.000000, -687.000000)">
+            <g id="Icon2" transform="translate(589.000000, 688.000000)">
+                <path d="M61.67,10.13 L61.67,30.83 L45.61,30.83 C45.4852867,30.8382155 45.3624372,30.7964195 45.2686104,30.7138518 C45.1747835,30.6312842 45.1177074,30.5147457 45.11,30.39 L45.11,10.57 C45.1312482,10.3127511 45.3521373,10.1183688 45.61,10.13 L61.67,10.13 Z" id="Path" fill="#C1C9E0"></path>
+                <path d="M16.94,10.57 L16.94,30.39 C16.9454209,30.5030982 16.9049474,30.6135941 16.827757,30.6964326 C16.7505665,30.7792711 16.6431989,30.8274339 16.53,30.83 L0,30.83 L0,10.13 L16.53,10.13 C16.7635624,10.1408058 16.9456873,10.3362569 16.94,10.57 Z" id="Path" fill="#C1C9E0"></path>
+                <rect id="Rectangle" stroke="#363F5A" stroke-width="2" stroke-linecap="round" x="0" y="0" width="61.67" height="40.97" rx="0.88"></rect>
+                <rect id="Rectangle" stroke="#C1C9E0" fill="#C1C9E0" x="7.55" y="4.02" width="3.4" height="3.21" rx="1"></rect>
+                <rect id="Rectangle" stroke="#C1C9E0" fill="#C1C9E0" x="18.58" y="4.02" width="3.4" height="3.21" rx="1"></rect>
+                <rect id="Rectangle" stroke="#C1C9E0" fill="#C1C9E0" x="29.62" y="4.02" width="3.4" height="3.21" rx="1"></rect>
+                <rect id="Rectangle" stroke="#C1C9E0" fill="#C1C9E0" x="40.66" y="4.02" width="3.4" height="3.21" rx="1"></rect>
+                <rect id="Rectangle" stroke="#C1C9E0" fill="#C1C9E0" x="51.69" y="4.02" width="3.4" height="3.21" rx="1"></rect>
+                <rect id="Rectangle" stroke="#C1C9E0" fill="#C1C9E0" x="7.55" y="33.64" width="3.4" height="3.21" rx="1"></rect>
+                <rect id="Rectangle" stroke="#C1C9E0" fill="#C1C9E0" x="18.58" y="33.64" width="3.4" height="3.21" rx="1"></rect>
+                <rect id="Rectangle" stroke="#C1C9E0" fill="#C1C9E0" x="29.62" y="33.64" width="3.4" height="3.21" rx="1"></rect>
+                <rect id="Rectangle" stroke="#C1C9E0" fill="#C1C9E0" x="40.66" y="33.64" width="3.4" height="3.21" rx="1"></rect>
+                <rect id="Rectangle" stroke="#C1C9E0" fill="#C1C9E0" x="51.69" y="33.64" width="3.4" height="3.21" rx="1"></rect>
+                <rect id="Rectangle" fill="#C1C9E0" x="21.95" y="10.51" width="19.95" height="19.95" rx="1"></rect>
+                <path d="M34.52,19.62 L30.62,17.36 C30.3099835,17.1810081 29.9279362,17.1813855 29.618274,17.3609896 C29.3086117,17.5405937 29.1185755,17.8720247 29.12,18.23 L29.12,22.74 C29.1221425,23.0961886 29.3135877,23.4243497 29.6225978,23.6015155 C29.9316079,23.7786812 30.3115297,23.778104 30.62,23.6 L34.52,21.35 C34.8284022,21.1711011 35.0182281,20.8415343 35.0182281,20.485 C35.0182281,20.1284657 34.8284022,19.7988989 34.52,19.62 Z" id="Path" stroke="#363F5A" stroke-width="2" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
